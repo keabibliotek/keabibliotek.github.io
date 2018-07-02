@@ -1,0 +1,241 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+/*alle container elementer sat til 100% for at fylde hele skærmens højde*/
+html, body, .container-fluid, .row, .row > div {
+  height: 100%;
+}
+
+html{
+	font-size: calc(0.5rem + 0.5vw);
+}
+
+body{
+	min-height: 500px;
+  background-color: black; /*baggrundsfarve sort for markant hover effekt*/
+}
+
+/*Breakpoints
+
+.kategori: position sættes for at kunne placere elementerne, top sættes til 50% for at centrere teksten i elementet, transform sættes med translateY for at få teksten det sidste stykke op.
+
+.toptekst: display sættes for at vise/ikke-vise teksten.
+
+(kan nok med fordel ændres til JS, så vi kan toggle en hel klasse af gangen, i stedet for at sætte ny value for hver attribute enkeltvis hver gang).
+
+*/
+
+/* Small devices (767px and down) */
+@media (max-width: 767px) {  
+  .kategori {font-size:1.8rem; position:relative; float:left; transform: translateY(-50%)} /*1rem = 16px*/
+  .toptekst, .mellemtekst{display:none;}
+  hr, h5 {display: none;}
+  .ikon {float:right;}
+  .flex-sm-column {height: 90%; width:100%;flex-direction: column;}
+  .bogmaerke {width: 100%; height: 20%; border-left: 0; border-right: 0; border-top: 1px solid white; border-bottom: 1px solid white;}
+}
+ 
+/* Medium & large devices (tablets, 768px and up) */
+@media (min-width: 768px) {  
+  .kategori {font-size:1.7rem; position:relative; float:none; transform:translateY(0%);}
+  .toptekst{font-size: 0.8rem; margin-top:20px; display:inherit;}
+  .mellemtekst{font-size: 1rem; margin-top:40px;display:inherit;}
+  .flex-md-row{height:88%;}
+  .ikon {float:none;}
+  .bogmaerke {
+    height: 100%;
+    border-bottom: 0px;
+    width: 25%; 
+    border: 2px solid white;
+  }
+  hr, h5 {display: block;}
+}
+
+/* TOP BOKS*/
+#generelt {
+  height:12vh;
+  width: 100%;
+  font-size:.7rem; 
+  color: #fff;
+  border: 2px solid white;
+  border-bottom: 0px solid white;
+}
+
+#generelt h1 {
+  font-family: Lato;
+  font-weight: 500;
+}
+
+#generelt h6 {
+  font-size: .7rem;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+#play-icon {
+  background-image: url('grafik/play.svg');
+  width:5vh;
+  height:5vh;
+}
+
+#play-icon:hover {
+  background-image: url('grafik/play-hover.svg');
+  cursor: pointer;
+  -webkit-grab
+  -webkit-grabbing
+}
+
+#henvisninger-icon {
+  background-image: url('grafik/henvisninger.svg');
+  width:5vh;
+  height:5vh;
+}
+
+#henvisninger-icon:hover {
+  background-image: url('grafik/henvisninger-hover.svg');
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/*fælles css for alle bogmaerker*/
+.bogmaerke {
+  font-family: "Roboto";
+  font-weight: 700;
+  color:aliceblue;
+  column-break-inside: avoid;
+  display: inline-block; /* forhindre at cards fordeler sig over flere rækker ved 1-række visning (små enheder) */
+  padding: 1px;
+  transition: ease-in-out .8s;
+}
+
+.bogmaerke:hover{ 
+  outline-width: 0px;
+  outline-style: solid;
+  outline-color: rgba(50,50,50,1);
+  outline-offset: -5px;
+  z-index: 1;
+  transition: ease-in-out 0.2s; 
+  /*outline-offset:-7.5px;*/
+}
+
+.kategori{
+  white-space: nowrap;
+  overflow: visible;
+}
+
+.mellemtekst {
+  margin-top: 0px;
+}
+
+.ikon {
+  width:12vw;
+  height:12vh;
+  position:relative;
+}
+
+/*FARVER på bogmærker*/
+#generelt, .topbar, #omKilderModal .modal-content .modal-header {
+	background-color: rgb(35,50,73);
+}
+
+#aktualitet, #aktualitetModal .modal-content .modal-header, #aktualitetModal .modal-content .modal-body {
+  background-color: rgb(0,171,138);
+  /*background-image: linear-gradient(rgb(0,171,138));*/
+}
+
+#relevans, #relevansModal .modal-content .modal-header, #relevansModal .modal-content .modal-body {
+	background-color: rgb(245,140,15); /*rgb(29,122,35) - rgb(43,179,52)*/
+}
+
+#argument, #argumentModal .modal-content .modal-header, #argumentModal .modal-content .modal-body{
+  background-color: rgb(142,127,174);
+}
+
+#afsender, #afsenderModal .modal-content .modal-header, #afsenderModal .modal-content .modal-body {
+	background-color: rgb(61,188,220);
+}
+
+#motiv, #motivModal .modal-content .modal-header, #motivModal .modal-content .modal-body{
+  background-color: rgb(223,70,97);
+}
+
+/* HOVER */
+.overlay-darken {
+  opacity: .4;
+  /*transition: ease-in-out 1s; */
+}
+
+.overlay-highlight {
+  opacity: 1;
+  transition: ease-in-out 0.4s; 
+}
+
+/* HEADERS */
+h4 {
+  margin-top:20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+}
+
+h6 {
+  margin-bottom: 0px;
+  text-transform: uppercase; /*under-overskrit i store bogstaver*/
+}
+
+/*MODAL styling*/
+.modal-header p {
+  color: #eee;
+  line-height: 0.9rem;
+  font-size: .9rem;
+  font-style: italic;
+  margin-top: 15px;
+}
+
+.modal-header img {
+  height:6vh;
+  width:6vw;
+}
+
+.modal-title{
+  text-transform: uppercase;
+  color: #eee;
+  float:left;
+  width:50%;
+}
+
+.modal-body {
+  color: #eee;
+}
+
+/*.modal .tips-container {
+  height: 140px;
+}
+
+.modal .tjek{
+  font-size: 1.1rem;
+  text-align: left;
+  font-family: 'Lato';
+  float: left;
+  width: 85%;
+}*/
+
+.i-icon {
+  content:url(grafik/info-24px.svg);
+  width:2vw;
+  height: 2vh;
+}
+
+.modal-content{
+  border: 1px solid white; /*fjerner hvid border i header og fooder*/
+}
+
+.embed-responsive .embed-responsive-item{
+  padding:10px; /*padding udenom embedded youtube video*/
+}
