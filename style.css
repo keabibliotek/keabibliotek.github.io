@@ -28,7 +28,7 @@ body{
 
 /* Small devices (767px and down) */
 @media (max-width: 767px) {  
-  .kategori {font-size:1.8rem; position:relative; float:left; transform: translateY(-50%)} /*1rem = 16px*/
+  .kategori {font-size:2.5rem; position:relative; float:left; transform: translateY(-50%)} /*1rem = 16px*/
   .toptekst, .mellemtekst{display:none;}
   hr, h5 {display: none;}
   .ikon {float:right;}
@@ -60,6 +60,7 @@ body{
   color: #fff;
   border: 2px solid white;
   border-bottom: 0px solid white;
+  padding-left:0.5em;
 }
 
 #generelt h1 {
@@ -111,8 +112,9 @@ body{
   column-break-inside: avoid;
   display: inline-block; /* forhindre at cards fordeler sig over flere rækker ved 1-række visning (små enheder) */
   padding: 1px;
-  transition: ease-in-out .8s;
-}
+  transition: opacity .8s;
+/*  transition: ease-in-out .8s;
+*/}
 
 .bogmaerke:hover{ 
   outline-width: 0px;
@@ -120,13 +122,15 @@ body{
   outline-color: rgba(50,50,50,1);
   outline-offset: -5px;
   z-index: 1;
-  transition: ease-in-out 0.2s; 
-  /*outline-offset:-7.5px;*/
+  transition: opacity .8s;
+/*  transition: ease-in-out 0.2s; 
+*/  /*outline-offset:-7.5px;*/
 }
 
 .kategori{
   white-space: nowrap;
   overflow: visible;
+  padding-left:0.5em;
 }
 
 .mellemtekst {
@@ -173,8 +177,8 @@ body{
 
 .overlay-highlight {
   opacity: 1;
-  transition: ease-in-out 0.4s; 
-}
+/*  transition: ease-in-out 0.4s; 
+*/}
 
 /* HEADERS */
 h4 {
