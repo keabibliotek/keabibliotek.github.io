@@ -3,11 +3,12 @@
   <name>Kildekritik</name>
   <description>Fem korte om kilder</description>
   <author email="marg@kea.dk" href="http://www.bibliotek.kea.dk">Daniel Præsius og Martin Gundtoft</author>
-  <preference name="phonegap-version" value="cli-6.3.0" />
+	
+  <!--<preference name="phonegap-version" value="cli-6.3.0" />
   <preference name="permissions" value="none" />
   <preference name="orientation" value="portrait" />
   <preference name="target-device" value="universal" />
-  <preference name="fullscreen" value="false" />
+  <preference name="fullscreen" value="false" />-->
 
   <plugin name="cordova-plugin-inappbrowser" spec="1.3.0" />
   <plugin name="cordova-plugin-device" spec="1.1.2" />
