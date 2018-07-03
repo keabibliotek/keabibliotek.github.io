@@ -10,9 +10,9 @@
   <preference name="target-device" value="universal" />
   <preference name="fullscreen" value="false" />-->
 
-  <plugin name="cordova-plugin-inappbrowser" spec="1.3.0" />
+  <!--<plugin name="cordova-plugin-inappbrowser" spec="1.3.0" />
   <plugin name="cordova-plugin-device" spec="1.1.2" />
-  <plugin name="cordova-plugin-splashscreen" spec="3.2.2" />
+  <plugin name="cordova-plugin-splashscreen" spec="3.2.2" />-->
 
   <icon src="/grafik/argument.svg" />
   <splash src="/grafik/KEA_logo_DK.svg" />
