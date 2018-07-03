@@ -1,5 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
-<widget id="dk.kea.kildekritik" version="0.1" xmlns="keabibliotek.github.io">
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget id="dk.kea.kildekritik" version="0.0.1" xmlns="http://www.w3.org/ns/widgets">
   <name>Kildekritik</name>
   <description>Fem korte om kilder</description>
   <author email="marg@kea.dk" href="http://www.bibliotek.kea.dk">Daniel Præsius og Martin Gundtoft</author>
