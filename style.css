@@ -140,7 +140,7 @@ body{
 }
 
 /*FARVER på bogmærker*/
-#generelt, .topbar, #omKilderModal .modal-content .modal-header {
+#generelt,#omKilderModal,#kildehenvisningerModal, .topbar, .modal-content .modal-header {
 	background-color: rgb(35,50,73);
 }
 
