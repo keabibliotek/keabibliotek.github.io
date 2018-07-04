@@ -12,7 +12,7 @@ html{
 }
 
 body{
-	min-height: 500px;
+  min-height: 500px;
   background-color: black; /*baggrundsfarve sort for markant hover effekt*/
 }
 
@@ -54,8 +54,7 @@ body{
 
 /* TOP BOKS*/
 #generelt {
-  height:12vh;
-  min-height: 4rem;
+  height:6rem;
   width: 100%;
   font-size:.7rem; 
   color: #fff;
@@ -78,16 +77,16 @@ body{
 
 #femkortelogo {
   background-image: url('grafik/5kortelogo.svg');
-  width:4rem;
-  min-height: 4rem;
+  width:8rem;
+  min-height: 8rem;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 #applogo {
   background-image: url('grafik/applogo.svg');
-  width: 3rem;
-  min-height: 3rem;
+  width: 5rem;
+  min-height: 5rem;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -96,6 +95,7 @@ body{
   background-image: url('grafik/play.svg');
   width:2rem;
   min-height:2rem;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
