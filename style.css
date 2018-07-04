@@ -167,6 +167,8 @@ body{
 .ikon {
   width:12vw;
   height:12vh;
+  min-height: 50px;
+  min-width: 50px;
   position:relative;
 }
 
@@ -243,6 +245,10 @@ h6 {
 
 .modal-body {
   color: #eee;
+}
+
+.modal-body-white{
+  color: black;
 }
 
 /*.modal .tips-container {

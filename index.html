@@ -27,28 +27,25 @@
 	<!-- <div class="d-flex flex-column flex-grow-1"> -->
 <!--	<div class="p-2"><h1>5 korte om kilder</h1></div>
 -->		<!-- <div></div> -->
-	<div class="justify-content-start d-flex m-4 flex-grow-1">
-		<div class="showModal align-items-center justify-content-end d-flex flex-column p-2" id="femKorte">
+<!--	<div class="justify-content-start d-flex m-4 flex-grow-1">
+-->		<div class="showModal align-items-center justify-content-end d-flex flex-column p-2" id="femKorte">
 			<div>
 				<div id="femkortelogo"></div>
 			</div>
 		</div>
 		<div class="showModal align-items-center d-flex flex-column p-2" id="omKilder">
-			<div>
-				<!-- <img id="play-icon" src="grafik/play.svg" style="width:5vh;" /> -->
-			<div id="play-icon" class="pointer"></div>
-			</div>
-			<div class="d-none d-xs-block d-sm-flex">INTRO</div>
+			<div id="play-icon" class="pointer" title="Intro til kilder"></div>
+			<div class="d-none d-xs-block d-sm-flex">INTRO TIL KILDER</div>
 		</div>
 		<div class="showModal align-items-center d-flex flex-column p-2" id="kildehenvisninger">
-			<!-- <div><img src="grafik/henvisninger.svg" style="width:5vh;" /></div> -->
-			<div id="henvisninger-icon" class="pointer"></div>
+			<div id="henvisninger-icon" class="pointer" title="Kildehenvisninger"></div>
 			<div class="d-none d-xs-block d-sm-flex">KILDEHENVISNINGER</div>
 		</div>
-	</div>
-<!--	<div class="d-flex flex-column align-items-end justify-content-end">
+<!--	</div>
+--><!--	<div class="d-flex flex-column align-items-end justify-content-end">
 -->	<div class="showModal align-items-center d-flex flex-column p-2" id="omAppen">
-			<div id="om-icon" class="pointer"></div>
+			<div id="om-icon" class="pointer" title="Om denne app"></div>
+			<div class="d-none d-xs-block d-sm-flex">OM DENNE APP</div>
 	</div>
 	<div class="align-items-center d-flex flex-column p-2">
 		<div id="applogo"></div>
@@ -122,10 +119,10 @@
 	    <!-- Modal content-->
 	    <div class="modal-content">
 	      <div class="modal-header d-flex align-items-center">
-<!--	      	<img class="m-2" src="grafik/afsender.svg" />
--->	        <h1 class="modal-title">Om kilder</h1>
-	        <p class="text-center">Find ud af, hvem der har skrevet teksten! Hvad er f.eks. forfatterens baggrund?</p>
-	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+	      	<img class="m-2" src="grafik/play.svg" />
+	        <h1 class="modal-title">Intro til kilder</h1>
+<!--	        <p class="text-center">Find ud af, hvem der har skrevet teksten! Hvad er f.eks. forfatterens baggrund?</p>
+-->	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
 			  <span aria-hidden="true">&times;</span>
 			</button>
 	      </div>
@@ -143,12 +140,17 @@
 	  <div class="modal-dialog modal-lg">
 	    <!-- Modal content-->
 	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h1 class="modal-title text-center">Kildehenvisninger</h1>
-	        <button type="button" class="close" data-dismiss="modal"></button>
-	      </div>
+	      <div class="modal-header d-flex align-items-center">
+			<img class="m-2" src="grafik/henvisninger.svg" />
+	        <h1 class="modal-title">KILDEHENVISNINGER</h1>
+			<button type="button" class="close" aria-label="Close" data-dismiss="modal">
+			  <span aria-hidden="true">&times;</span>
+			</button>	
+		  </div>
+			<div class="modal-body">
+        		<p class="text-black-50">Noget om henvisninger, harvard...</p>
+      		</div>
 		  <div class="embed-responsive embed-responsive-16by9">
-			  <p>noget snak om kildehenvisninger</p>
 			  <!--<video controls>
  				<source src="video/Generelt.mp4" type="video/mp4">
  			</video>-->
@@ -162,12 +164,17 @@
 	  <div class="modal-dialog modal-lg">
 	    <!-- Modal content-->
 	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h1 class="modal-title text-center">Om appen</h1>
-	        <button type="button" class="close" data-dismiss="modal"></button>
+	      <div class="modal-header d-flex align-items-center">
+			<img class="m-2" src="grafik/om.svg" />
+	        <h1 class="modal-title">OM DENNE APP</h1>
+	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+			  <span aria-hidden="true">&times;</span>
+			</button>
 	      </div>
+			<div class="modal-body">
+        		<p class="text-black-50">Noget om appen...</p>
+      		</div>
 		  <div class="embed-responsive embed-responsive-16by9">
-			  <p>noget snak om appen</p>
 			  <!--<video controls>
  				<source src="video/Generelt.mp4" type="video/mp4">
  			</video>-->
@@ -185,8 +192,8 @@
 	      <div class="modal-header d-flex align-items-center">
 	      	<img class="m-2" src="grafik/afsender.svg" />
 	        <h1 class="modal-title">Afsender</h1>
-	        <p class="text-center">Find ud af, hvem der har skrevet teksten! Hvad er f.eks. forfatterens baggrund?</p>
-	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+<!--	        <p class="text-center">Find ud af, hvem der har skrevet teksten! Hvad er f.eks. forfatterens baggrund?</p>
+-->	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
 			  <span aria-hidden="true">&times;</span>
 			</button>
 	      </div>
@@ -214,8 +221,8 @@
 	      <div class="modal-header d-flex align-items-center">
 	      	<img class="m-2" src="grafik/relevans.svg" />
 	        <h1 class="modal-title">Relevans</h1>
-	        <p class="text-center">Tænk over, om kilden er den mest egnede for din opgave! Er kilden den rigtige til dit formål?</p>
-	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+<!--	        <p class="text-center">Tænk over, om kilden er den mest egnede for din opgave! Er kilden den rigtige til dit formål?</p>
+-->	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
 			  <span aria-hidden="true">&times;</span>
 			</button>
 	      </div>
@@ -243,8 +250,8 @@
 	      <div class="modal-header d-flex align-items-center">
 	      	<img class="m-2" src="grafik/argument.svg" />
 	        <h1 class="modal-title">Argument</h1>
-	        <p class="text-center">Tjek, om der er henvisninger til andre kilder, der underbygger argumenterne?</p>
-	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+<!--	        <p class="text-center">Tjek, om der er henvisninger til andre kilder, der underbygger argumenterne?</p>
+-->	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
 			  <span aria-hidden="true">&times;</span>
 			</button>
 	      </div>
@@ -272,8 +279,8 @@
 	      <div class="modal-header d-flex align-items-center">
 	      	<img class="m-2" src="grafik/motiv.svg" />
 	        <h1 class="modal-title">Motiv</h1>
-	        <p class="text-center">Overvej motiv og interesser! Hvorfor er kilden skrevet, og hvad er formålet med den?</p>
-	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+<!--	        <p class="text-center">Overvej motiv og interesser! Hvorfor er kilden skrevet, og hvad er formålet med den?</p>
+-->	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
 			  <span aria-hidden="true">&times;</span>
 			</button>
 	      </div>
@@ -301,8 +308,8 @@
 	      <div class="modal-header d-flex align-items-center">
 	      	<img class="m-2" src="grafik/aktualitet.svg" />
 	        <h1 class="modal-title">Aktualitet</h1>
-	        <p class="text-center">Undersøg altid, om der findes mere relevante kilder indenfor dit emne!</p>
-	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+<!--	        <p class="text-center">Undersøg altid, om der findes mere relevante kilder indenfor dit emne!</p>
+-->	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
 			  <span aria-hidden="true">&times;</span>
 			</button>
 	      </div>
