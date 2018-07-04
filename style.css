@@ -77,8 +77,8 @@ body{
 
 #femkortelogo {
   background-image: url('grafik/5kortelogo.svg');
-  width:9rem;
-  min-height:9rem;
+  width:8rem;
+  min-height:8rem;
   background-repeat: no-repeat;
   background-position: center;
 }
