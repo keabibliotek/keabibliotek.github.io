@@ -55,12 +55,12 @@ body{
 /* TOP BOKS*/
 #generelt {
   height:12vh;
+  min-height: 4rem;
   width: 100%;
   font-size:.7rem; 
   color: #fff;
   border: 2px solid white;
   border-bottom: 0px solid white;
-  padding-left:0.5em;
 }
 
 #generelt h1 {
@@ -76,23 +76,39 @@ body{
   cursor: pointer;
 }
 
+#femkortelogo {
+  background-image: url('grafik/5kortelogo.svg');
+  width:4rem;
+  min-height: 4rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#applogo {
+  background-image: url('grafik/applogo.svg');
+  width: 3rem;
+  min-height: 3rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 #play-icon {
   background-image: url('grafik/play.svg');
-  width:5vh;
-  height:5vh;
+  width:2rem;
+  min-height:2rem;
+  background-repeat: no-repeat;
 }
 
 #play-icon:hover {
   background-image: url('grafik/play-hover.svg');
   cursor: pointer;
-  -webkit-grab
-  -webkit-grabbing
 }
 
 #henvisninger-icon {
   background-image: url('grafik/henvisninger.svg');
-  width:5vh;
-  height:5vh;
+  width:2rem;
+  min-height:2rem;
+  background-repeat: no-repeat;
 }
 
 #henvisninger-icon:hover {
@@ -101,17 +117,14 @@ body{
 
 #om-icon {
   background-image: url('grafik/om.svg');
-  width:5vh;
-  height:5vh;
+  width:2rem;
+  min-height:2rem;
+  background-repeat: no-repeat;
 }
 
 #om-icon:hover {
   background-image: url('grafik/om_hover.svg');
-  width:5vh;
-  height:5vh;
   cursor: pointer;
-  -webkit-grab
-  -webkit-grabbing
 }
 .row {
   margin-right: 0;
@@ -158,7 +171,7 @@ body{
 }
 
 /*FARVER på bogmærker*/
-#generelt,#omKilderModal,#kildehenvisningerModal, .topbar, .modal-content .modal-header {
+#generelt,#omKilderModal,#kildehenvisningerModal, #omAppenModal, .topbar, .modal-content .modal-header {
 	background-color: rgb(35,50,73);
 }
 
