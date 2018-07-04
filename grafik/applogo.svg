@@ -3,27 +3,28 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 489 489" style="enable-background:new 0 0 489 489;" xml:space="preserve">
 <style type="text/css">
-	.st0{display:none;fill:#BF5C6E;}
-	.st1{fill:#233249;}
-	.st2{display:none;fill:#305371;}
-	.st3{display:none;fill:#DF4661;}
-	.st4{display:none;fill:#68CCE8;}
-	.st5{display:none;fill:#39607A;}
-	.st6{display:none;fill:#69596A;}
-	.st7{fill:#FFFFFF;}
-	.st8{font-family:'HelveticaNeue-CondensedBold';}
-	.st9{font-size:100px;}
+	.st0{display:none;}
+	.st1{fill:#BF5C6E;}
+	.st2{display:inline;fill:#233249;}
+	.st3{fill:#305371;}
+	.st4{fill:#DF4661;}
+	.st5{fill:#68CCE8;}
+	.st6{fill:#39607A;}
+	.st7{fill:#69596A;}
+	.st8{fill:#FFFFFF;}
+	.st9{font-family:'HelveticaNeue-CondensedBold';}
+	.st10{font-size:100px;}
 </style>
-<g>
-	<circle class="st0" cx="244.5" cy="244.5" r="244.5"/>
+<g class="st0">
 	<circle class="st1" cx="244.5" cy="244.5" r="244.5"/>
 	<circle class="st2" cx="244.5" cy="244.5" r="244.5"/>
 	<circle class="st3" cx="244.5" cy="244.5" r="244.5"/>
 	<circle class="st4" cx="244.5" cy="244.5" r="244.5"/>
 	<circle class="st5" cx="244.5" cy="244.5" r="244.5"/>
 	<circle class="st6" cx="244.5" cy="244.5" r="244.5"/>
+	<circle class="st7" cx="244.5" cy="244.5" r="244.5"/>
 </g>
-<text transform="matrix(1 0 0 1 36.5977 313.5078)" class="st7 st8 st9">BIBLIOTEK</text>
+<text transform="matrix(1 0 0 1 36.5977 313.5078)" class="st8 st9 st10">BIBLIOTEK</text>
 <image style="overflow:visible;enable-background:new    ;" width="892" height="250" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA38AAAD/CAYAAABB72/KAAAACXBIWXMAAC5KAAAuSgHjYbEKAAAA
 GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAGxdJREFUeNrs3bHLXNed8PEjY1SG
 WLgQLlQKLLYIabaIMMjVNitlWVkQd5YD2c6V/4lN5S6Gjdw5IMtLrGyzjQRC7lMEGVSqMAoYeUm1

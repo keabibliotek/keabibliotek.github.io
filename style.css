@@ -99,6 +99,20 @@ body{
   background-image: url('grafik/henvisninger-hover.svg');
 }
 
+#om-icon {
+  background-image: url('grafik/om.svg');
+  width:5vh;
+  height:5vh;
+}
+
+#om-icon:hover {
+  background-image: url('grafik/om_hover.svg');
+  width:5vh;
+  height:5vh;
+  cursor: pointer;
+  -webkit-grab
+  -webkit-grabbing
+}
 .row {
   margin-right: 0;
   margin-left: 0;
