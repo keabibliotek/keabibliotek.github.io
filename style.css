@@ -33,7 +33,7 @@ body{
   hr, h5 {display: none;}
   .ikon {float:right;}
   .flex-sm-column {height: 90%; width:100%;flex-direction: column;}
-  .bogmaerke {width: 100%; height: 20%; border-left: 0; border-right: 0; border-top: 1px solid white; border-bottom: 1px solid white;}
+  .bogmaerke {width: 100%; height: 30%; border-left: 0; border-right: 0; border-top: 1px solid white; border-bottom: 1px solid white;}
 }
  
 /* Medium & large devices (tablets, 768px and up) */
@@ -41,7 +41,7 @@ body{
   .kategori {font-size:1.7rem; position:relative; float:none; transform:translateY(0%);}
   .toptekst{font-size: 0.8rem; margin-top:20px; display:inherit;}
   .mellemtekst{font-size: 1rem; margin-top:40px;display:inherit;}
-  .flex-md-row{height:88%;}
+  .flex-md-row{height:90%;}
   .ikon {float:none;}
   .bogmaerke {
     height: 100%;
@@ -54,7 +54,7 @@ body{
 
 /* TOP BOKS*/
 #generelt {
-  height:6rem;
+  height:10%;
   width: 100%;
   font-size:.7rem; 
   color: #fff;
@@ -247,10 +247,17 @@ h6 {
   color: #eee;
 }
 
-.modal-body-white{
+#modal-body-omAppen{
   color: black;
+  background-image:url(grafik/KEAtest.jpg);
+  background-size: cover;
 }
 
+#modal-body-kildehenvisninger{
+  color: black;
+  background-image:url(grafik/KEAtest.jpg);
+  background-size: cover;
+}
 /*.modal .tips-container {
   height: 140px;
 }
@@ -263,11 +270,11 @@ h6 {
   width: 85%;
 }*/
 
-.i-icon {
+/*.i-icon {
   content:url(grafik/info-24px.svg);
   width:2vw;
   height: 2vh;
-}
+}*/
 
 .modal-content{
   border: 1px solid white; /*fjerner hvid border i header og fooder*/
@@ -276,3 +283,6 @@ h6 {
 .embed-responsive .embed-responsive-item{
   padding:10px; /*padding udenom embedded youtube video*/
 }
+.close{color:white;}
+
+.close:hover{color:white; opacity:50%;}

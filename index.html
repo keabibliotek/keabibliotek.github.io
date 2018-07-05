@@ -30,7 +30,7 @@
 <!--	<div class="justify-content-start d-flex m-4 flex-grow-1">
 -->		<div class="showModal align-items-center d-flex flex-column p-4" id="femKorte">
 			<div id="femkortelogo"></div>
-		</div>
+		</div>	
 		<div class="showModal align-items-center d-flex flex-column p-2" id="omKilder">
 			<div id="play-icon" class="pointer" title="Intro til kilder"></div>
 			<div class="d-none d-xs-block d-sm-flex">INTRO TIL KILDER</div>
@@ -43,7 +43,7 @@
 --><!--	<div class="d-flex flex-column align-items-end justify-content-end">
 -->	<div class="showModal align-items-center d-flex flex-column p-2" id="omAppen">
 			<div id="om-icon" class="pointer" title="Om denne app"></div>
-			<div class="d-none d-xs-block d-sm-flex">OM DENNE APP</div>
+			<div class="d-none d-xs-block d-sm-flex">OM APPEN</div>
 	</div>
 	<div class="align-items-center d-flex flex-column p-2">
 		<div id="applogo"></div>
@@ -145,13 +145,7 @@
 			  <span aria-hidden="true">&times;</span>
 			</button>	
 		  </div>
-			<div class="modal-body">
-        		<p class="text-black-50">Noget om henvisninger, harvard...</p>
-      		</div>
-		  <div class="embed-responsive embed-responsive-16by9">
-			  <!--<video controls>
- 				<source src="video/Generelt.mp4" type="video/mp4">
- 			</video>-->
+		  <div class="modal-body embed-responsive embed-responsive-16by9" id="modal-body-kildehenvisninger">
 		  </div>
 	    </div>
 	  </div>
@@ -164,18 +158,12 @@
 	    <div class="modal-content">
 	      <div class="modal-header d-flex align-items-center">
 			<img class="m-2" src="grafik/om.svg" />
-	        <h1 class="modal-title">OM DENNE APP</h1>
+	        <h1 class="modal-title">OM APPEN</h1>
 	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
 			  <span aria-hidden="true">&times;</span>
 			</button>
 	      </div>
-			<div class="modal-body">
-        		<p class="text-black-50">Noget om appen...</p>
-      		</div>
-		  <div class="embed-responsive embed-responsive-16by9">
-			  <!--<video controls>
- 				<source src="video/Generelt.mp4" type="video/mp4">
- 			</video>-->
+		  <div class="modal-body embed-responsive embed-responsive-16by9" id="modal-body-omAppen">
 		  </div>
 	    </div>
 	  </div>
@@ -363,7 +351,7 @@ $('.modal').on('hide.bs.modal', function() {
 
 // pauser afspilning når modal lukkes
 $('body').on('hidden.bs.modal', '.modal', function () {
-	$('video').trigger('load');
+	$('video').trigger('load'); //ændret til load
 });
 
 	
