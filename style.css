@@ -154,10 +154,10 @@ body{
 */  /*outline-offset:-7.5px;*/
 }
 
-.topbaroverlay{
+/*.topbaroverlay{
   z-index: 1;
   transition: opacity .8s;
-}
+}*/
 
 .kategori{
   white-space: nowrap;
@@ -228,6 +228,19 @@ h6 {
   text-transform: uppercase; /*under-overskrit i store bogstaver*/
 }
 
+p.broedtekst{
+	font-size: 1.2em;
+	font-family: Lato;
+}
+
+h2.topoverskrift{
+	font-family: Lato;
+}
+
+div.modaltekst{
+	margin:1.5em;
+}
+
 /*MODAL styling*/
 .modal-header p {
   color: #eee;
@@ -253,17 +266,22 @@ h6 {
   color: #eee;
 }
 
-#modal-body-omAppen{
+.topimage{
+ 	width:100%;
+}
+
+/*#omAppen_modal{
   color: black;
   background-image:url(grafik/om.jpg);
   background-size: cover;
-}
+}*/
 
-#modal-body-kildehenvisninger{
+/*#kildehenvisninger_modal{
   color: black;
-  background-image:url(grafik/KEAtest.jpg);
+  background-image:url(grafik/kildehenvisninger.jpg);
   background-size: cover;
-}
+}*/
+
 /*.modal .tips-container {
   height: 140px;
 }
