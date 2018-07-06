@@ -154,6 +154,11 @@ body{
 */  /*outline-offset:-7.5px;*/
 }
 
+.topbaroverlay{
+  z-index: 1;
+  transition: opacity .8s;
+}
+
 .kategori{
   white-space: nowrap;
   overflow: visible;
@@ -173,9 +178,10 @@ body{
 }
 
 /*FARVER på bogmærker*/
-#generelt,#omKilderModal,#kildehenvisningerModal, #omAppenModal, .topbar, .modal-content .modal-header {
+#generelt, .topbar, .modal-content .modal-header {
 	background-color: rgb(35,50,73);
 }
+
 
 #aktualitet, #aktualitetModal .modal-content .modal-header, #aktualitetModal .modal-content .modal-body {
   background-color: rgb(0,171,138);
@@ -245,6 +251,7 @@ h6 {
 
 .modal-body {
   color: #eee;
+  mh
 }
 
 #modal-body-omAppen{
