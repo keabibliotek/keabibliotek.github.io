@@ -251,12 +251,11 @@ h6 {
 
 .modal-body {
   color: #eee;
-  mh
 }
 
 #modal-body-omAppen{
   color: black;
-  background-image:url(grafik/KEAtest.jpg);
+  background-image:url(grafik/om.jpg);
   background-size: cover;
 }
 
