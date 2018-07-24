@@ -76,9 +76,10 @@ body{
 }
 
 #femkortelogo {
-  background-image: url('grafik/5kortelogo.svg');
-  width:8rem;
+  background-image: url('grafik/5kortelogo.png');
+  width: 8rem;
   min-height:8rem;
+  background-size: 8rem;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -329,7 +330,7 @@ div.modaltekst{
         padding-left: 1.5em;
         font-size: 1.5em;
         font-family: Lato;
-		min-height: 68px;
+		    min-height: 68px;
     }
     li:before{
         content: counter(myCounter, decimal-leading-zero);
