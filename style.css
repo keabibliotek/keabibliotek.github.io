@@ -317,6 +317,7 @@ div.modaltekst{
  ul, ol{
         /*margin: 0;padding: 0;*/
         list-style: none;
+        line-height: 2rem; /*centrer tekst vertikalt*/
     }
     li {
         background: #434A5430;
@@ -326,25 +327,28 @@ div.modaltekst{
         padding: 7px;
         position: relative;
         top: 0.5em;
-        border-radius:  0em 2px 1em 1em;
-        padding-left: 1.5em;
-        font-size: 1.5em;
+        border-radius:  0em 0em 1em 1em;
+        /*border-right: 2px dotted rgba(255, 255, 255, 0.2);*/
+        /*border-bottom: 2px dotted rgba(255, 255, 255, 0.2);*/
+        padding-left: 1.7em;
+        font-size: 1.2em;
         font-family: Lato;
-		    min-height: 68px;
+        min-height: 50px;
     }
     li:before{
         content: counter(myCounter, decimal-leading-zero);
         display: inline-block;
         text-align: center;
-        font-size: 2em;
-        line-height: 1.3em;
+        font-size: 1.5em;
+        line-height: 1.2em;
         background-color: #868686;
         padding: 10px;
         font-weight: bold;
         position: absolute; 
         top: 0;
-        left: -40px;
+        left: -30px;
         border-radius: 50%;
+        border: solid 1px rgba(255, 255, 255, .5);
         font-family: Lato;
     }
 
