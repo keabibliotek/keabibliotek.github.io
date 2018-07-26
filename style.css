@@ -260,10 +260,8 @@ div.modaltekst{
 }
 
 .modal-header img {
-  max-height: 4rem;
-  max-width: 4rem;
-  /*height:8vh;*/
-  /*width:5vw;*/
+  height: 4rem;
+  width: 4rem;
 }
 
 .modal-title{
