@@ -189,6 +189,11 @@ body{
   /*background-image: linear-gradient(rgb(0,171,138));*/
 }
 
+.modal-body {
+  /*background: linear-gradient(180deg, rgba(255,255,0,0), rgba(0,153,124,1));*/
+  background: linear-gradient(180deg, rgba(255,255,0,0), rgba(0,0,0,.2));
+}
+
 #relevans, #relevansModal .modal-content .modal-header, #relevansModal .modal-content .modal-body {
 	background-color: rgb(245,140,15); /*rgb(29,122,35) - rgb(43,179,52)*/
 }
@@ -243,6 +248,10 @@ div.modaltekst{
 }
 
 /*MODAL styling*/
+.modal-header {
+  max-height: 5rem;
+}
+
 .modal-header p {
   color: #eee;
   line-height: 0.9rem;
@@ -252,8 +261,10 @@ div.modaltekst{
 }
 
 .modal-header img {
-  height:6vh;
-  width:6vw;
+  max-height: 4rem;
+  max-width: 4rem;
+  /*height:8vh;*/
+  /*width:5vw;*/
 }
 
 .modal-title{
@@ -308,7 +319,11 @@ div.modaltekst{
 .embed-responsive .embed-responsive-item{
   padding:10px; /*padding udenom embedded youtube video*/
 }
-.close{color:white;}
+.close{
+  color:white;
+  font-size: 2rem;
+  margin-top: -.5rem;
+}
 
 .close:hover{color:white; opacity:50%;}
 
