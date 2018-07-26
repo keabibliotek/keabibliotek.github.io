@@ -189,11 +189,6 @@ body{
   /*background-image: linear-gradient(rgb(0,171,138));*/
 }
 
-.modal-body {
-  /*background: linear-gradient(180deg, rgba(255,255,0,0), rgba(0,153,124,1));*/
-  background: linear-gradient(180deg, rgba(255,255,0,0), rgba(0,0,0,.2));
-}
-
 #relevans, #relevansModal .modal-content .modal-header, #relevansModal .modal-content .modal-body {
 	background-color: rgb(245,140,15); /*rgb(29,122,35) - rgb(43,179,52)*/
 }
@@ -208,6 +203,10 @@ body{
 
 #motiv, #motivModal .modal-content .modal-header, #motivModal .modal-content .modal-body{
   background-color: rgb(223,70,97);
+}
+
+.modal-body { /*gradient på modal body*/
+  background: linear-gradient(180deg, rgba(255,255,0,0), rgba(0,0,0,.2));
 }
 
 /* HOVER */
