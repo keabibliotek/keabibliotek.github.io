@@ -93,39 +93,66 @@ body{
 }
 
 #play-icon {
-  background-image: url('grafik/play.svg');
+  /*background-image: url('grafik/play.svg');*/
+  background: url('grafik/play-sprite.svg') 0px 0px;
+  /*width: 24px;*/
   width:2rem;
   min-height:2rem;
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
+  background-size:200%;
 }
 
 #play-icon:hover {
-  background-image: url('grafik/play-hover.svg');
+  /*background-image: url('grafik/play-sprite.svg');*/
+  background: url('grafik/play-sprite.svg') 0px 0px;
   cursor: pointer;
+  width:2rem;
+  min-height:2rem;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size:200%;
 }
 
 #henvisninger-icon {
-  background-image: url('grafik/henvisninger.svg');
+  /*background-image: url('grafik/henvisninger.svg');*/
+  background: url('grafik/henvisninger-sprite.svg');
   width:2rem;
   min-height:2rem;
+  background-position: left;
   background-repeat: no-repeat;
+  background-size:200%;
 }
 
 #henvisninger-icon:hover {
-  background-image: url('grafik/henvisninger-hover.svg');
+  /*background-image: url('grafik/henvisninger-hover.svg');*/
+  background: url('grafik/henvisninger-sprite.svg');
+  cursor: pointer;
+  width:2rem;
+  min-height:2rem;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size:200%;
 }
 
 #om-icon {
-  background-image: url('grafik/om.svg');
+  background: url('grafik/om-sprite.svg');
+  cursor: pointer;
   width:2rem;
   min-height:2rem;
+  background-position: left;
   background-repeat: no-repeat;
+  background-size:200%;
 }
 
 #om-icon:hover {
-  background-image: url('grafik/om_hover.svg');
+  background: url('grafik/om-sprite.svg');
   cursor: pointer;
+  width:2rem;
+  min-height:2rem;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size:200%;
 }
 .row {
   margin-right: 0;
