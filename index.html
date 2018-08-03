@@ -24,34 +24,27 @@
 
 <!-- Top boks-->
 <div class="d-flex flex-row align-items-center justify-content-between" id="generelt">
-	<!-- <div class="d-flex flex-column flex-grow-1"> -->
-<!--	<div class="p-2"><h1>5 korte om kilder</h1></div>
--->		<!-- <div></div> -->
-<!--	<div class="justify-content-start d-flex m-4 flex-grow-1">
--->		<div class="showModal align-items-center d-flex flex-column p-4" id="femKorte">
-			<div id="femkortelogo"></div>
-		</div>	
-		<div class="showModal align-items-center d-flex flex-column p-2" id="omKilder">
-			<div id="play-icon" class="pointer" title="Intro til kilder"></div>
-			<div class="d-none d-xs-block d-sm-flex">INTRO TIL KILDER</div>
-		</div>
-		<div class="showModal align-items-center d-flex flex-column p-2" id="kildehenvisninger">
-			<div id="henvisninger-icon" class="pointer" title="Kildehenvisninger"></div>
-			<div class="d-none d-xs-block d-sm-flex">KILDEHENVISNINGER</div>
-		</div>
-<!--	</div>
---><!--	<div class="d-flex flex-column align-items-end justify-content-end">
--->	<div class="showModal align-items-center d-flex flex-column p-2" id="omAppen">
-			<div id="om-icon" class="pointer" title="Om denne app"></div>
-			<div class="d-none d-xs-block d-sm-flex">OM APPEN</div>
+	<div class="showModal align-items-center d-flex flex-column p-4" id="femKorte">
+		<div id="femkortelogo"></div>
+	</div>	
+	<div class="showModal align-items-center d-flex flex-column p-2" id="omKilder">
+		<div id="play-icon" class="pointer" title="Intro til kilder"></div>
+		<div class="d-none d-xs-block d-sm-flex">INTRO TIL KILDER</div>
+	</div>
+	<div class="showModal align-items-center d-flex flex-column p-2" id="kildehenvisninger">
+		<div id="henvisninger-icon" class="pointer" title="Kildehenvisninger"></div>
+		<div class="d-none d-xs-block d-sm-flex">KILDEHENVISNINGER</div>
+	</div>
+	<div class="showModal align-items-center d-flex flex-column p-2" id="omAppen">
+		<div id="om-icon" class="pointer" title="Om denne app"></div>
+		<div class="d-none d-xs-block d-sm-flex">OM APPEN</div>
 	</div>
 	<div class="align-items-center d-flex flex-column p-2">
 		<div id="applogo"></div>
 	</div>
-<!--	<div class="d-flex"><img src="grafik/applogo.svg" class="m-3" style="width: 10vh;" /></div>-->
 </div>
-<div class="d-flex flex-sm-column flex-md-row align-items-md-center justify-sm-content-start">
-	
+
+	<div class="d-flex flex-sm-column flex-md-row align-items-md-center justify-sm-content-start">	
 	<div class="bogmaerke showModal d-flex flex-sm-row flex-md-column p-2" id="afsender">
 	  <div class="d-flex d-sm-flex d-md-block">
 	    <h4 class="kategori align-self-center">Afsender</h4>
@@ -110,7 +103,7 @@
 	
 </div>
 
-<!-- Modal dialog-style popup visninger. Modal for hver overskrift. Som lightbox -->
+<!-- Modaler -->
 	<!-- OM KILDER -->
 	<div id="omKilderModal" class="modal fade" role="dialog">
 	  <div class="modal-dialog modal-lg">
@@ -119,8 +112,7 @@
 	      <div class="modal-header d-flex align-items-center">
 	      	<img src="grafik/play.svg" />
 	        <h1 class="modal-title">Intro</h1>
-<!--	        <p class="text-center">Find ud af, hvem der har skrevet teksten! Hvad er f.eks. forfatterens baggrund?</p>
--->	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
 			  <span aria-hidden="true">&times;</span>
 			</button>
 	      </div>
@@ -206,8 +198,7 @@
 	      <div class="modal-header d-flex align-items-center">
 	      	<img src="grafik/afsender.svg" />
 	        <h1 class="modal-title">Afsender</h1>
-<!--	        <p class="text-center">Find ud af, hvem der har skrevet teksten! Hvad er f.eks. forfatterens baggrund?</p>
--->	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
 			  <span aria-hidden="true">&times;</span>
 			</button>
 	      </div>
@@ -222,11 +213,6 @@
 				<li>Er forfatteren: Forsker, journalist, studerende, blogger, fagperson, andet?</li>
 				<li>Hvilken type kilde er det? En lærebog, en avis, et tidsskrift, et produktkatalog, en kommerciel hjemmeside?</li>
 			  </ul>
-	      <!--<div class="d-flex flex-column justify-content-center align-items-start">
-			  <div class="pl-2 pr-2 border-right border-white "><p>Find ud af, hvem der har skrevet teksten! Hvad er f.eks. forfatterens baggrund?</p></div>
-			  <div class="pl-2 pr-2  border-right border-white"><p>Er forfatteren: Forsker, journalist, studerende, blogger, fagperson, andet?</p></div>
-			  <div class="pl-2 pr-2 "><p>Hvilken type kilde det? En lærebog, en avis, et tidsskrift, et produktkatalog, en kommerciel hjemmeside?</p></div>
-			</div>-->
       	</div>
 	    </div>
 	  </div>
@@ -240,8 +226,7 @@
 	      <div class="modal-header d-flex align-items-center">
 	      	<img src="grafik/relevans.svg" />
 	        <h1 class="modal-title">Relevans</h1>
-<!--	        <p class="text-center">Tænk over, om kilden er den mest egnede for din opgave! Er kilden den rigtige til dit formål?</p>
--->	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
 			  <span aria-hidden="true">&times;</span>
 			</button>
 	      </div>
@@ -256,11 +241,6 @@
 				<li>Er kilden på det rette faglige niveau. Er niveauet for lavt?</li>
 				<li>Hvem er teksten skrevet til? Studerende, fagfolk, forskere, almindelige mennesker?</li>
 			  </ul>
-	    <!--  <div class="d-flex justify-content-center align-items-start">
-			  <div class="pl-2 pr-2 border-right border-white text-center"><p>Tænk over, om kilden er den mest egnede for din opgave! Er kilden den rigtige til dit formål?</p></div>
-			  <div class="pl-2 pr-2 text-center border-right border-white"><p>Er kilden på det rette faglige niveau. Er niveauet for lavt?</p></div>
-			  <div class="pl-2 pr-2 text-center"><p>Hvem er teksten skrevet til? Studerende, fagfolk, forskere, almindelige mennesker?</p></div>
-			</div>-->
       	</div>
 	    </div>
 	  </div>
@@ -274,8 +254,7 @@
 	      <div class="modal-header d-flex align-items-center">
 	      	<img src="grafik/argument.svg" />
 	        <h1 class="modal-title">Argument</h1>
-<!--	        <p class="text-center">Tjek, om der er henvisninger til andre kilder, der underbygger argumenterne?</p>
--->	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
 			  <span aria-hidden="true">&times;</span>
 			</button>
 	      </div>
@@ -290,11 +269,6 @@
 				<li>Holder argumenterne, og er de til at gennemskue?</li>
 				<li>Er der en rød tråd og sammenhæng i teksten?</li>
 			  </ul>
-	    <!--  <div class="d-flex justify-content-center align-items-start">
-			  <div class="pl-2 pr-2 border-right border-white text-center"><p>Tjek, om der er henvisninger til andre kilder, der underbygger argumenterne?</p></div>
-			  <div class="pl-2 pr-2 text-center border-right border-white"><p>Holder argumenterne, og er de til at gennemskue?</p></div>
-			  <div class="pl-2 pr-2 text-center"><p>Er der en rød tråd og sammenhæng i teksten?</p></div>
-			</div>-->
       	</div>
 	    </div>
 	  </div>
@@ -308,8 +282,7 @@
 	      <div class="modal-header d-flex align-items-center">
 	      	<img src="grafik/motiv.svg" />
 	        <h1 class="modal-title">Motiv</h1>
-<!--	        <p class="text-center">Overvej motiv og interesser! Hvorfor er kilden skrevet, og hvad er formålet med den?</p>
--->	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
 			  <span aria-hidden="true">&times;</span>
 			</button>
 	      </div>
@@ -324,11 +297,6 @@
 				<li>Vil kilden underholde dig, formidle, forklare, sælge, argumentere eller dokumentere noget?</li>
 				<li>Hvilke interesser er på spil: Kommercielle, politiske, journalistiske, faglige?</li>
 			  </ul>
-	    <!--  <div class="d-flex justify-content-center align-items-start">
-			  <div class="pl-2 pr-2 border-right border-white text-center"><p>Overvej motiv og interesser! Hvorfor er kilden skrevet, og hvad er formålet med den?</p></div>
-			  <div class="pl-2 pr-2 text-center border-right border-white"><p>Vil kilden underholde dig, formidle, forklare, sælge, argumentere eller dokumentere noget?</p></div>
-			  <div class="pl-2 pr-2 text-center"><p>Hvilke interesser er på spil: Kommercielle, politiske, journalistiske, faglige?</p></div>
-			</div>-->
       	</div>
 	    </div>
 	  </div>
@@ -342,8 +310,7 @@
 	      <div class="modal-header d-flex align-items-center">
 	      	<img src="grafik/aktualitet.svg" />
 	        <h1 class="modal-title">Aktualitet</h1>
-<!--	        <p class="text-center">Undersøg altid, om der findes mere relevante kilder indenfor dit emne!</p>
--->	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
 			  <span aria-hidden="true">&times;</span>
 			</button>
 	      </div>
@@ -358,56 +325,40 @@
 				<li>Findes der evt. en nyere kilde/viden?</li>
 				<li>Hvor meget betyder nyhedsværdien for din opgave?</li>
 			  </ul>
-	     <!-- <div class="d-flex justify-content-center align-items-start">
-			  <div class="pl-2 pr-2 border-right border-white text-center"><p>Tjek altid, hvornår kilden er skrevet! Er den stadig aktuel?</p></div>
-			  <div class="pl-2 pr-2 text-center border-right border-white"><p>Findes der evt. en nyere kilde/viden?</p></div>
-			  <div class="pl-2 pr-2 text-center"><p>Hvor meget betyder nyhedsværdien for din opgave?</p></div>
-			</div>-->
       	</div>
 	    </div>
 	  </div>
 	</div>
 
+	<script>
+		//script til hover effekt på kategorier
+		$('.bogmaerke').hover(function(){
+			$(this).addClass('overlay-highlight');
+			$(this).toggleClass('overlay-darken');
+			$(this).siblings().toggleClass('overlay-darken');
+			$(this).siblings().removeClass('overlay-highlight');
+		})
 
-<script>
-//script til hover effekt på kategorier
-$('.bogmaerke').hover(function(){
-	$(this).addClass('overlay-highlight');
-	$(this).toggleClass('overlay-darken');
-	$(this).siblings().toggleClass('overlay-darken');
-	$(this).siblings().removeClass('overlay-highlight');
-})
+		$('.bogmaerke').mouseleave(function(){ //fjerner overlay ved når curser forlader elementer
+		    $('.bogmaerke').removeClass('overlay-darken');
+		});
 
-$('.bogmaerke').mouseleave(function(){ //fjerner overlay ved når curser forlader elementer
-    $('.bogmaerke').removeClass('overlay-darken');
-});
+		var $videoSrc;  
 
-var $videoSrc;  
+		$('.showModal').on('click', function() { // funktion viser modal ved klik
+			a = $(this).attr('id'); //henter ID på klikket element
+			b = '#' + a + "Modal"; //genererer ID-navn på Modal
+			$(b).modal({ show: true }); //viser Modal
 
-$('.showModal').on('click', function() { // funktion viser modal ved klik
-	a = $(this).attr('id'); //henter ID på klikket element
-	b = '#' + a + "Modal"; //genererer ID-navn på Modal
-	$(b).modal({ show: true }); //viser Modal
+			$videoID = '#' + a + 'Video'; //generer ID på videoelement i berørte modal
+			$videoSrc = $(this).data( "src" ); //set source URL fra bogmærke
+		})
 
-	$videoID = '#' + a + 'Video'; //generer ID på videoelement i berørte modal
-	$videoSrc = $(this).data( "src" ); //set source URL fra bogmærke
-	
-	// $($videoID).attr('src',$videoSrc + "&amp;rel=0&amp;showinfo=0&amp;modestbranding=1&amp;autoplay=0" ); //set source-url og play video
-})
+		// pauser afspilning når modal lukkes
+		$('body').on('hidden.bs.modal', '.modal', function () {
+			$('video').trigger('load'); //ændret til load
+		});
 
-// stop afspilning af youtube video når modal lukkes
-$('.modal').on('hide.bs.modal', function() {
-  // stop video
-	$(".video").attr('src','');
-})
-
-// pauser afspilning når modal lukkes
-$('body').on('hidden.bs.modal', '.modal', function () {
-	$('video').trigger('load'); //ændret til load
-});
-
-	
-</script>
-
+	</script>
 </body>
 </html>
