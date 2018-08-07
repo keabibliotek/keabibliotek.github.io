@@ -76,9 +76,10 @@ body{
 }
 
 #femkortelogo {
-  background-image: url('grafik/5kortelogo.svg');
-  width:8rem;
+  background-image: url('grafik/5kortelogo.png');
+  width: 8rem;
   min-height:8rem;
+  background-size: 8rem;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -92,39 +93,66 @@ body{
 }
 
 #play-icon {
-  background-image: url('grafik/play.svg');
+  /*background-image: url('grafik/play.svg');*/
+  background: url('grafik/play-sprite.svg') 0px 0px;
+  /*width: 24px;*/
   width:2rem;
   min-height:2rem;
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
+  background-size:200%;
 }
 
 #play-icon:hover {
-  background-image: url('grafik/play-hover.svg');
+  /*background-image: url('grafik/play-sprite.svg');*/
+  background: url('grafik/play-sprite.svg') 0px 0px;
   cursor: pointer;
+  width:2rem;
+  min-height:2rem;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size:200%;
 }
 
 #henvisninger-icon {
-  background-image: url('grafik/henvisninger.svg');
+  /*background-image: url('grafik/henvisninger.svg');*/
+  background: url('grafik/henvisninger-sprite.svg');
   width:2rem;
   min-height:2rem;
+  background-position: left;
   background-repeat: no-repeat;
+  background-size:200%;
 }
 
 #henvisninger-icon:hover {
-  background-image: url('grafik/henvisninger-hover.svg');
+  /*background-image: url('grafik/henvisninger-hover.svg');*/
+  background: url('grafik/henvisninger-sprite.svg');
+  cursor: pointer;
+  width:2rem;
+  min-height:2rem;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size:200%;
 }
 
 #om-icon {
-  background-image: url('grafik/om.svg');
+  background: url('grafik/om-sprite.svg');
+  cursor: pointer;
   width:2rem;
   min-height:2rem;
+  background-position: left;
   background-repeat: no-repeat;
+  background-size:200%;
 }
 
 #om-icon:hover {
-  background-image: url('grafik/om_hover.svg');
+  background: url('grafik/om-sprite.svg');
   cursor: pointer;
+  width:2rem;
+  min-height:2rem;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size:200%;
 }
 .row {
   margin-right: 0;
@@ -204,6 +232,10 @@ body{
   background-color: rgb(223,70,97);
 }
 
+.modal-body { /*gradient på modal body*/
+  background: linear-gradient(180deg, rgba(255,255,0,0), rgba(0,0,0,.1));
+}
+
 /* HOVER */
 .overlay-darken {
   opacity: .4;
@@ -242,6 +274,10 @@ div.modaltekst{
 }
 
 /*MODAL styling*/
+.modal-header {
+  max-height: 5rem;
+}
+
 .modal-header p {
   color: #eee;
   line-height: 0.9rem;
@@ -251,8 +287,8 @@ div.modaltekst{
 }
 
 .modal-header img {
-  height:6vh;
-  width:6vw;
+  height: 4rem;
+  width: 4rem;
 }
 
 .modal-title{
@@ -307,7 +343,11 @@ div.modaltekst{
 .embed-responsive .embed-responsive-item{
   padding:10px; /*padding udenom embedded youtube video*/
 }
-.close{color:white;}
+.close{
+  color:white;
+  font-size: 2rem;
+  margin-top: -.5rem;
+}
 
 .close:hover{color:white; opacity:50%;}
 
@@ -316,6 +356,7 @@ div.modaltekst{
  ul, ol{
         /*margin: 0;padding: 0;*/
         list-style: none;
+        line-height: 2rem; /*centrer tekst vertikalt*/
     }
     li {
         background: #434A5430;
@@ -325,25 +366,28 @@ div.modaltekst{
         padding: 7px;
         position: relative;
         top: 0.5em;
-        border-radius:  0em 2px 1em 1em;
-        padding-left: 1.5em;
-        font-size: 1.5em;
+        border-radius:  0em 0em 1em 1em;
+        /*border-right: 2px dotted rgba(255, 255, 255, 0.2);*/
+        /*border-bottom: 2px dotted rgba(255, 255, 255, 0.2);*/
+        padding-left: 1.7em;
+        font-size: 1.2em;
         font-family: Lato;
-		min-height: 68px;
+        min-height: 50px;
     }
     li:before{
         content: counter(myCounter, decimal-leading-zero);
         display: inline-block;
         text-align: center;
-        font-size: 2em;
-        line-height: 1.3em;
+        font-size: 1.5em;
+        line-height: 1.2em;
         background-color: #868686;
         padding: 10px;
         font-weight: bold;
         position: absolute; 
         top: 0;
-        left: -40px;
+        left: -30px;
         border-radius: 50%;
+        border: solid 1px rgba(255, 255, 255, .5);
         font-family: Lato;
     }
 
