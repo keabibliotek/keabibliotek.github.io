@@ -265,12 +265,21 @@ p.broedtekst{
 	font-family: Lato;
 }
 
+p.kildetekst{
+	font-size: 0.8em;
+	font-family: Lato;
+}
+
 h2.topoverskrift{
 	font-family: Lato;
 }
 
 div.modaltekst{
 	margin:1.5em;
+}
+
+.linje{
+	display:block;
 }
 
 /*MODAL styling*/
