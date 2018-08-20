@@ -178,6 +178,7 @@ body{
   outline-offset: -5px;
   z-index: 1;
   transition: opacity .8s;
+  cursor:pointer;
 /*  transition: ease-in-out 0.2s; 
 */  /*outline-offset:-7.5px;*/
 }
