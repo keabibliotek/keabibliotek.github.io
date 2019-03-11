@@ -1,0 +1,410 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+<title>Kildekritik / tjekliste til kilder</title>
+
+<link rel="icon" type="image/png" href="grafik/favicon-16x16.png" sizes="16x16">  
+<link rel="icon" type="image/png" href="grafik/favicon-32x32.png" sizes="32x32">  
+<link rel="icon" type="image/png" href="grafik/favicon-96x96.png" sizes="96x96">
+
+<!--bootstrap CDN CSS, JQuery og JavaScript biblioteker-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+<!--CSS til browser-->
+<link href="style.css" rel="stylesheet" type="text/css">
+	
+<!--Material design ikoner-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- jQuery bibliotek -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Seneste JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<!-- Top boks-->
+<div class="d-flex flex-row align-items-center justify-content-between" id="generelt">
+	<div class="showModal align-items-center d-flex flex-column p-4" id="femKorte">
+		<div id="femkortelogo"></div>
+	</div>	
+	<div class="showModal align-items-center d-flex flex-column p-2" id="omKilder">
+		<div id="play-icon" class="pointer" title="Intro til kilder"></div>
+		<div class="d-none d-xs-block d-sm-flex">INTRO TIL KILDER</div>
+	</div>
+	<div class="showModal align-items-center d-flex flex-column p-2" id="kildehenvisninger">
+		<div id="henvisninger-icon" class="pointer" title="Kildehenvisninger"></div>
+		<div class="d-none d-xs-block d-sm-flex">KILDEHENVISNINGER</div>
+	</div>
+	<div class="showModal align-items-center d-flex flex-column p-2" id="omAppen">
+		<div id="om-icon" class="pointer" title="Om denne app"></div>
+		<div class="d-none d-xs-block d-sm-flex">OM APPEN</div>
+	</div>
+	<div class="align-items-center d-flex flex-column p-2">
+		<div id="applogo"></div>
+	</div>
+</div>
+
+	<div class="d-flex flex-sm-column flex-md-row align-items-md-center justify-sm-content-start">	
+	<div class="bogmaerke showModal d-flex flex-sm-row flex-md-column p-2" id="afsender">
+	  <div class="d-flex d-sm-flex d-md-block">
+	    <h4 class="kategori align-self-center">Afsender</h4>
+		  <hr />
+	    <p class="mellemtekst p-2">Find ud af, hvem der har skrevet teksten! Hvad er f.eks. forfatterens baggrund?</p>
+	  </div>
+	  <div class="d-flex flex-grow-1 justify-content-md-center justify-content-sm-end justify-content-end">
+	  	<img class="ikon align-self-md-end align-self-sm-center mb-md-5 mb-sm-0 align-self-center" src="grafik/afsender.svg" />
+	  </div>
+	</div>
+
+	<div class="bogmaerke showModal d-flex flex-sm-row flex-md-column p-2" id="relevans">
+	  <div class="d-flex d-sm-flex d-md-block">
+	    <h4 class="kategori align-self-center">Relevans</h4>
+		  <hr />
+	    <p class="mellemtekst p-2">Tænk over, om kilden er den mest egnede for din opgave! Er kilden den rigtige til DIT formål?</p>
+	  </div>
+	  <div class="d-flex flex-grow-1 justify-content-md-center justify-content-sm-end justify-content-end">
+	  	<img class="ikon align-self-md-end align-self-sm-center mb-md-5 mb-sm-0 align-self-center" src="grafik/relevans.svg" />
+	  </div>
+	</div>
+
+	<div class="bogmaerke showModal d-flex flex-sm-row flex-md-column p-2" id="aktualitet">
+	  <div class="d-flex d-sm-flex d-md-block">
+	    <h4 class="kategori align-self-center">Aktualitet</h4>
+		  <hr />			 			  
+	    <p class="mellemtekst p-2">Tjek altid, hvornår kilden er skrevet! Er den stadig aktuel?</p>
+	    <br />
+	  </div>		
+	  <div class="d-flex flex-grow-1 justify-content-md-center justify-content-sm-end justify-content-end">	  
+	  	<img class="ikon align-self-md-end align-self-sm-center mb-md-5 mb-sm-0 align-self-center" src="grafik/aktualitet.svg" />		   
+	  </div>
+	</div>
+
+	<div class="bogmaerke showModal d-flex flex-sm-row flex-md-column p-2" id="motiv">
+	  <div class="d-flex d-sm-flex d-md-block">
+	    <h4 class="kategori align-self-center">Motiv</h4>
+		  <hr />
+	    <p class="mellemtekst p-2">Overvej kildens motiv og interesser! Hvorfor er den skrevet, og hvad er formålet med den?</p>
+	  </div>
+	  <div class="d-flex flex-grow-1 justify-content-md-center justify-content-sm-end justify-content-end">
+	  	<img class="ikon align-self-md-end align-self-sm-center mb-md-5 mb-sm-0 align-self-center" src="grafik/motiv.svg" />
+	  </div>
+	</div>
+	
+	<div class="bogmaerke showModal d-flex flex-sm-row flex-md-column p-2" id="argument">
+	  <div class="d-flex d-sm-flex d-md-block">
+	    <h4 class="kategori align-self-center">Argument</h4>
+		  <hr />
+	    <p class="mellemtekst p-2">Tjek, om der er henvisninger til andre kilder, der underbygger argumenterne?</p>
+	  </div>
+	  <div class="d-flex flex-grow-1 justify-content-md-center justify-content-sm-end justify-content-end">
+	  	<img class="ikon align-self-md-end align-self-sm-center mb-md-5 mb-sm-0 align-self-center" src="grafik/argument.svg" />
+	  </div>
+	</div>
+	
+</div>
+
+<!-- Modaler -->
+	<!-- OM KILDER -->
+	<div id="omKilderModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog modal-lg">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header d-flex align-items-center">
+	      	<img src="grafik/play.svg" />
+	        <h1 class="modal-title">Intro</h1>
+	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+	      </div>
+	  	  	<div class="embed-responsive embed-responsive-16by9">
+	  	  		<video controls preload="metadata" poster="grafik/generelt.png">
+ 					<source src="video/Generelt.mp4" type="video/mp4">
+					<track src="subs/generelt_en.vtt" kind="subtitles" srclang="en" label="English">
+ 				</video>
+			</div>
+	  	</div>
+		</div>
+	</div>
+
+	<!-- KILDEHENVISNINGER -->
+	<div id="kildehenvisningerModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog modal-lg">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header d-flex align-items-center">
+			<img src="grafik/henvisninger.svg" />
+	        <h1 class="modal-title">KILDEHENVISNINGER</h1>
+			<button type="button" class="close" aria-label="Close" data-dismiss="modal">
+			  <span aria-hidden="true">&times;</span>
+			</button>	
+		  </div>
+		  <div class="embed-responsive">
+			  <img src="grafik/kildehenvisninger.jpg" class="topimage">
+			  <div class="modaltekst">
+			  	<h2 class="topoverskrift">Kilder og kildehenvisninger</h2>
+				<p class="broedtekst">
+				I denne app lærer du at vurdere dine kilder, og finde de mest egnede til dine studieopgaver. 
+				<br><br>
+				Derudover er det selvfølgelig vigtigt, at du lærer at lave korrekte kildehenvisninger!
+				<br><br>
+				Det skal nemlig være fuldstændig klart, hvor du har din information fra, og hvad det er for en kilde du benytter! Derfor er det alfa og omega, at du er helt skarp på, hvordan du henviser til dine kilder og laver en korrekt litteraturliste.
+				<br><br>
+				Der findes forskellige måder at lave kildehenvisninger på. Nogle af de mest benyttede systemer er Harvard, APA og Vancouver.
+				<br><br>
+				Der er ikke ét kildehenvisningssystem, der er bedre end de andre, men det er vigtigt at bruge det valgte system konsekvent, og ikke blande dem sammen efter behag!
+				<br><br>
+				Læs meget mere om kildehenvisninger på <strong>www.stopplagiat.nu</strong>  
+				<br>
+				</p>
+			  </div>
+		  </div>
+		  </div>
+	    </div>
+	  </div>
+	
+	<!-- Om appen -->
+<div id="omAppenModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog modal-lg">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header d-flex align-items-center">
+			<img src="grafik/om.svg" />
+	        <h1 class="modal-title">OM APPEN</h1>
+	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+	      </div> 
+			<div class="embed-responsive">
+			  <img src="grafik/om.jpg" class="topimage">
+			  <div class="modaltekst">
+			  	<h2 class="topoverskrift">FEM KORTE OM KILDER</h2>
+				<p class="broedtekst">Version 1.00
+				<br><br>
+				Appen er udviklet på KEA Bibliotek 2017/2018, som en del af en co-creation proces mellem bibliotekets ansatte og de studerende på KEA.
+				<br><br/>
+				Projektet er delvist finansieret af Danmarks Elektroniske Fag- og Forskningsbibliotek (DEFF) som del af projektet:<i> Co-creation: Studerende som medproducenter i udviklingen af bibliotekernes læringsprodukter.</i> 
+				<br><br/>
+				<strong>Udviklere og medvirkende:</strong>
+				<br>
+				Ida Fallentin, Daniel Præsius, Martin Gundtoft, Frederick Lehmann Franck, Jonas Winding, Pia Hjuler Clemmensen, Helle Guldberg, Stine Lian Olsen og Simon Munk.
+				<br><br>
+				<strong>Tak til alle de studerende på KEA, der har hjulpet under udviklingen.</strong></p>
+				  <br/>
+			    <hr class="linje">
+				  <br/>
+				<p><strong>Anvendte kilder</strong></p>
+				<p class="kildetekst">
+				<strong>Alt for damerne (2017)</strong><i>Derfor deler vi sårbare ting på Facebook</i> af Anne Niluka Iversen. Lokaliseret den 14. august 2018 på www.alt.dk/artikler/derfor-deler-vi-sarbare-ting-pa-facebook. 
+				<br>
+				<strong>ARTE Booking (2018)</strong> Pressebillede af Clement Kjaersgaard. Lokaliseret den 13. august 2018 på www.artebooking.dk/clement-behrendt-kjersgaard/.
+				<br>
+				<strong>Dansk Standard (2001)</strong> <i>Fritidsbåde – Elektriske systemer – Vekselstrøminstallationer</i> (1. udg.). DS/EN ISO 13297. Lokaliseret den 14. august 2018 på www.baadteknik.dk/El-tek/230volt/DanskStandard/DanskStandard.htm.
+				<br>
+				<strong>Den velklædte mand (2015)</strong> Fotografi af Peter Lund Madsen i tweed og jeans. Lokaliseret den 13. august 2018 på www.denvelklaedtemand.dk/2015/11/peter-lund-madsen-i-tweed-og-jeans.html.
+				<br>
+				<strong>Energistyrelsen (2018)</strong> <i>Solenergi.</i> Lokaliseret den 14. august 2018 på www.ens.dk/ansvarsomraader/solenergi.
+				<br>
+				<strong>Forbes (2010)</strong> <i>Ranking the World's Most Sustainable Companies</i> af Helen Coster. Lokaliseret den 14. august 2018 på www.forbes.com/2010/01/26/most-sustainable-companies-leadership-citizenship-100.html#66142f9d5d29.
+				<br>
+				<strong>Heidi Hansen (2012)</strong><i>Branding – Teori, modeller, analyse.</i> Frederiksberg: Samfundslitteratur.
+				<br>
+				<strong>Hennes &#38; Mauritz (2011)</strong> <i>September 2011: The Pants Collection Spring/Summer 2011 for Men.</i> Lokaliseret september 2011 på www.hm.com.
+				<br>
+				<strong>IKEA (2013)</strong> Forside på produktkatalog. Lokaliseret den 13. august 2018 på www.ikea.com/ms/en_MY/pdf/press_releases/2014/fy14catalogue_press_release.pdf.
+				<br>
+				<strong>Solcellekonsulenten (2018)</strong> <i>Tilbud på hybrid-solcelleanlæg.</i> Lokaliseret den 14. august 2018 på www.solcellekonsulenten.dk. 
+				<br>
+				<strong>Pixabay (2018)</strong> Billede af firma fra Photogrammer7. Lokaliseret den 13. august 2018 på www.pixabay.com/en/building-glass-sky-blue-microsoft-1712699/.
+				<br>
+				<strong>Politiken (2018)</strong> Forside på e-avis. Lokaliseret den 10. august 2018 på www.twitter.com/politiken/status/1028000635113889793.
+				<br>
+				<strong>Rene Asmussen (2004)</strong> Billede: ”Man portrait old artist.” Lokaliseret den 13. august 2018 på www.pexels.com/photo/man-portrait-old-artist-25758/ og på www.reneasmussen.dk.
+				</p>
+			  </div>
+		  </div>
+	    </div>
+	  </div>
+	</div>
+
+
+	<!-- AFSENDER -->
+	<div id="afsenderModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog modal-lg">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header d-flex align-items-center">
+	      	<img src="grafik/afsender.svg" />
+	        <h1 class="modal-title">Afsender</h1>
+	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+	      </div>
+	  	  	<div class="embed-responsive embed-responsive-16by9">
+	  	  		<video controls preload="metadata" poster="grafik/afsender.png">
+ 					<source src="video/Afsender.mp4" type="video/mp4">
+					<track src="subs/afsender_en.vtt" kind="subtitles" srclang="en" label="English">
+ 				</video>
+			</div>
+	    <div class="modal-body">
+			  <ul>
+				<li>Find ud af, hvem der har skrevet teksten! Hvad er f.eks. forfatterens baggrund?</li>
+				<li>Er forfatteren: Forsker, journalist, studerende, blogger, fagperson, andet?</li>
+				<li>Hvilken type kilde er det? En lærebog, en avis, et tidsskrift, et produktkatalog, en kommerciel hjemmeside?</li>
+			  </ul>
+      	</div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- RELEVANS -->
+	<div id="relevansModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog modal-lg">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header d-flex align-items-center">
+	      	<img src="grafik/relevans.svg" />
+	        <h1 class="modal-title">Relevans</h1>
+	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+	      </div>
+	  	  	<div class="embed-responsive embed-responsive-16by9">
+	  	  		<video controls preload="metadata" poster="grafik/relevans.png">
+ 					<source src="video/Relevans.mp4" type="video/mp4">
+					<track src="subs/relevans_en.vtt" kind="subtitles" srclang="en" label="English">
+ 				</video>
+			</div>
+	    <div class="modal-body">
+			  <ul>
+				<li>Tænk over, om kilden er den mest egnede for din opgave! Er kilden den rigtige til dit formål?</li>
+				<li>Er kilden på det rette faglige niveau. Er niveauet for lavt?</li>
+				<li>Hvem er teksten skrevet til? Studerende, fagfolk, forskere, almindelige mennesker?</li>
+			  </ul>
+      	</div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- ARGUMENT -->
+	<div id="argumentModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog modal-lg">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header d-flex align-items-center">
+	      	<img src="grafik/argument.svg" />
+	        <h1 class="modal-title">Argument</h1>
+	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+	      </div>
+	  	  	<div class="embed-responsive embed-responsive-16by9">
+	  	  		<video controls preload="metadata" poster="grafik/argument.png">
+ 					<source src="video/Argument.mp4" type="video/mp4">
+					<track src="subs/argument_en.vtt" kind="subtitles" srclang="en" label="English">
+ 				</video>
+			</div>
+	    <div class="modal-body">
+			 <ul>
+				<li>Tjek, om der er henvisninger til andre kilder, der underbygger argumenterne?</li>
+				<li>Holder argumenterne, og er de til at gennemskue?</li>
+				<li>Er der en rød tråd og sammenhæng i teksten?</li>
+			  </ul>
+      	</div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- MOTIV -->
+	<div id="motivModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog modal-lg">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header d-flex align-items-center">
+	      	<img src="grafik/motiv.svg" />
+	        <h1 class="modal-title">Motiv</h1>
+	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+	      </div>
+	  	  	<div class="embed-responsive embed-responsive-16by9">
+	  	  		<video controls preload="metadata" poster="grafik/motiv.png">
+ 					<source src="video/Motiv.mp4" type="video/mp4">
+					<track src="subs/motiv_en.vtt" kind="subtitles" srclang="en" label="English">
+ 				</video>
+			</div>
+	    <div class="modal-body">
+			 <ul>
+				<li>Overvej motiv og interesser! Hvorfor er kilden skrevet, og hvad er formålet med den?</li>
+				<li>Vil kilden underholde dig, formidle, forklare, sælge, argumentere eller dokumentere noget?</li>
+				<li>Hvilke interesser er på spil: Kommercielle, politiske, journalistiske, faglige?</li>
+			  </ul>
+      	</div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- AKTUALITET -->
+	<div id="aktualitetModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog modal-lg">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header d-flex align-items-center">
+	      	<img src="grafik/aktualitet.svg" />
+	        <h1 class="modal-title">Aktualitet</h1>
+	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+	      </div>
+	  	  	<div class="embed-responsive embed-responsive-16by9">
+	  	  		<video controls preload="metadata" poster="grafik/aktualitet.png">
+ 					<source src="video/Aktualitet.mp4" type="video/mp4">
+					<track src="subs/aktualitet_en.vtt" kind="subtitles" srclang="en" label="English">
+ 				</video>
+			</div>
+	    <div class="modal-body">
+			<ul>
+				<li>Tjek altid, hvornår kilden er skrevet! Er den stadig aktuel?</li>
+				<li>Findes der evt. en nyere kilde/viden?</li>
+				<li>Hvor meget betyder nyhedsværdien for din opgave?</li>
+			  </ul>
+      	</div>
+	    </div>
+	  </div>
+	</div>
+
+	<script>
+		//script til hover effekt på kategorier
+		$('.bogmaerke').hover(function(){
+			$(this).addClass('overlay-highlight');
+			$(this).toggleClass('overlay-darken');
+			$(this).siblings().toggleClass('overlay-darken');
+			$(this).siblings().removeClass('overlay-highlight');
+		})
+
+		$('.bogmaerke').mouseleave(function(){ //fjerner overlay ved når curser forlader elementer
+		    $('.bogmaerke').removeClass('overlay-darken');
+		});
+
+		var $videoSrc;  
+
+		$('.showModal').on('click', function() { // funktion viser modal ved klik
+			a = $(this).attr('id'); //henter ID på klikket element
+			b = '#' + a + "Modal"; //genererer ID-navn på Modal
+			$(b).modal({ show: true }); //viser Modal
+
+			$videoID = '#' + a + 'Video'; //generer ID på videoelement i berørte modal
+			$videoSrc = $(this).data( "src" ); //set source URL fra bogmærke
+		})
+
+		// pauser afspilning når modal lukkes
+		$('body').on('hidden.bs.modal', '.modal', function () {
+			$('video').trigger('load'); //ændret til load
+		});
+
+	</script>
+</body>
+</html>
