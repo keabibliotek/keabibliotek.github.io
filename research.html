@@ -1,0 +1,302 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+<title>Fem korte</title>
+
+<link rel="icon" type="image/png" href="grafik/favicon-16x16.png" sizes="16x16">  
+<link rel="icon" type="image/png" href="grafik/favicon-32x32.png" sizes="32x32">  
+<link rel="icon" type="image/png" href="grafik/favicon-96x96.png" sizes="96x96">
+
+<!--bootstrap CDN CSS, JQuery og JavaScript biblioteker-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+<!--CSS til browser-->
+<link href="style.css" rel="stylesheet" type="text/css">
+	
+<!--Material design ikoner-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- jQuery bibliotek -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Seneste JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+	
+<!-- Title screen-->
+	
+<div id="overlay-preload"><span>Research</span></div>
+	
+<!-- Top boks-->
+<div class="d-flex flex-row align-items-center justify-content-between" id="generelt">
+	
+	
+	<div class="d-flex align-items-end pl-2">
+		<div class="p-2"><img id="femkortelogo" src="grafik/5logo.svg"/></div>
+		<div id="apptitle">KORTE OM RESEARCH</div>
+	</div>
+	
+	<div class="d-flex">
+		<div class="align-items-center d-flex p-2 pr-4" >
+			<a href="index.html"><div id="hamburgermenu"></div>
+			</a>
+		</div>
+	</div>
+	
+</div>
+
+	<div class="d-flex flex-sm-column flex-md-row align-items-md-center justify-sm-content-start">	
+	<div class="bogmaerke showModal d-flex flex-sm-row flex-md-column p-2" id="afsender">
+	  <div class="d-flex d-sm-flex d-md-block">
+	    <h4 class="kategori align-self-center">Om research</h4>
+		  <hr />
+	    <p class="mellemtekst p-2">Research just do it.</p>
+	  </div>
+	  <div class="d-flex flex-grow-1 justify-content-md-center justify-content-sm-end justify-content-end">
+	  	<img class="ikon align-self-md-end align-self-sm-center mb-md-5 mb-sm-0 align-self-center" src="grafik/omresearch.svg"/>
+	  </div>
+	</div>
+
+	<div class="bogmaerke showModal d-flex flex-sm-row flex-md-column p-2" id="relevans">
+	  <div class="d-flex d-sm-flex d-md-block">
+	    <h4 class="kategori align-self-center">Systematik</h4>
+		  <hr />
+	    <p class="mellemtekst p-2">Vær systematisk.</p>
+	  </div>
+	  <div class="d-flex flex-grow-1 justify-content-md-center justify-content-sm-end justify-content-end">
+	  	<img class="ikon align-self-md-end align-self-sm-center mb-md-5 mb-sm-0 align-self-center" src="grafik/systematik.svg" />
+	  </div>
+	</div>
+
+	<div class="bogmaerke showModal d-flex flex-sm-row flex-md-column p-2" id="aktualitet">
+	  <div class="d-flex d-sm-flex d-md-block">
+	    <h4 class="kategori align-self-center">Søgeteknik</h4>
+		  <hr />			 			  
+	    <p class="mellemtekst p-2">Søg ordentligt!</p>
+	    <br />
+	  </div>		
+	  <div class="d-flex flex-grow-1 justify-content-md-center justify-content-sm-end justify-content-end">	  
+	  	<img class="ikon align-self-md-end align-self-sm-center mb-md-5 mb-sm-0 align-self-center" src="grafik/soegeteknik.svg" />		   
+	  </div>
+	</div>
+
+	<div class="bogmaerke showModal d-flex flex-sm-row flex-md-column p-2" id="motiv">
+	  <div class="d-flex d-sm-flex d-md-block">
+	    <h4 class="kategori align-self-center">Indsamling</h4>
+		  <hr />
+	    <p class="mellemtekst p-2">Kvantitative og kvalitative metoder.</p>
+	  </div>
+	  <div class="d-flex flex-grow-1 justify-content-md-center justify-content-sm-end justify-content-end">
+	  	<img class="ikon align-self-md-end align-self-sm-center mb-md-5 mb-sm-0 align-self-center" src="grafik/indsamling.svg" />
+	  </div>
+	</div>
+	
+	<div class="bogmaerke showModal d-flex flex-sm-row flex-md-column p-2" id="argument">
+	  <div class="d-flex d-sm-flex d-md-block">
+	    <h4 class="kategori align-self-center">Ny viden</h4>
+		  <hr />
+	    <p class="mellemtekst p-2">Opdater dig selv.</p>
+	  </div>
+	  <div class="d-flex flex-grow-1 justify-content-md-center justify-content-sm-end justify-content-end">
+	  	<img class="ikon align-self-md-end align-self-sm-center mb-md-5 mb-sm-0 align-self-center" src="grafik/nyviden.svg" />
+	  </div>
+	</div>	
+</div>
+
+	
+	<!-- Modaler -->
+
+	<!-- Intro -->
+	<div id="afsenderModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog modal-lg">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header d-flex align-items-center">
+	      	<img src="grafik/omresearch.svg" />
+	        <h1 class="modal-title">Om Research</h1>
+	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+	      </div>
+	  	  	<div class="embed-responsive embed-responsive-16by9">
+				<video controls preload="metadata" poster="grafik/omresearch.png">
+ 					<source src="video/1_studie.mp4" type="video/mp4">
+<!-- 					<track src="subs/afsender_en.vtt" kind="subtitles" srclang="en" label="English"> -->
+ 				</video>
+			</div>
+	    <div class="modal-body">
+			  <ul>
+				<li>1. pointe</li>
+				<li>2. pointe</li>
+				<li>3. pointe</li>
+			  </ul>
+      	</div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Systematik -->
+	<div id="relevansModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog modal-lg">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header d-flex align-items-center">
+	      	<img src="grafik/systematik.svg" />
+	        <h1 class="modal-title">Systematik</h1>
+	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+	      </div>
+	  	  	<div class="embed-responsive embed-responsive-16by9">
+				<video controls preload="metadata" poster="grafik/systematik.png">
+ 					<source src="video/1_studie.mp4" type="video/mp4">
+<!-- 					<track src="subs/afsender_en.vtt" kind="subtitles" srclang="en" label="English"> -->
+ 				</video>
+			</div>
+	    <div class="modal-body">
+			  <ul>
+				<li>1. pointe</li>
+				<li>2. pointe</li>
+				<li>3. pointe</li>
+			  </ul>
+      	</div>
+	    </div>
+	  </div>
+	</div>
+	
+	
+	<!-- Søgeteknik -->
+	<div id="aktualitetModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog modal-lg">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header d-flex align-items-center">
+	      	<img src="grafik/soegeteknik.svg" />
+	        <h1 class="modal-title">Søgeteknik</h1>
+	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+	      </div>
+	  	  	<div class="embed-responsive embed-responsive-16by9">
+				<video controls preload="metadata" poster="grafik/soegeteknik.png">
+ 					<source src="video/1_studie.mp4" type="video/mp4">
+<!-- 					<track src="subs/afsender_en.vtt" kind="subtitles" srclang="en" label="English"> -->
+ 				</video>
+			</div>
+	    <div class="modal-body">
+			<ul>
+				<li>1. pointe</li>
+				<li>2. pointe</li>
+				<li>3. pointe</li>
+			  </ul>
+      	</div>
+	    </div>
+	  </div>
+	</div>
+	
+	<!-- Indsamling -->
+	<div id="motivModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog modal-lg">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header d-flex align-items-center">
+	      	<img src="grafik/indsamling.svg" />
+	        <h1 class="modal-title">Indsamling</h1>
+	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+	      </div>
+	  	  	<div class="embed-responsive embed-responsive-16by9">
+				<video controls preload="metadata" poster="grafik/indsamling.png">
+ 					<source src="video/1_studie.mp4" type="video/mp4">
+<!-- 					<track src="subs/afsender_en.vtt" kind="subtitles" srclang="en" label="English"> -->
+ 				</video>
+			</div>
+	    <div class="modal-body">
+			 <ul>
+				<li>1. pointe</li>
+				<li>2. pointe</li>
+				<li>3. pointe</li>
+			  </ul>
+      	</div>
+	    </div>
+	  </div>
+	</div>
+
+	<!--Ny viden -->
+	<div id="argumentModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog modal-lg">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header d-flex align-items-center">
+	      	<img src="grafik/nyviden.svg" />
+	        <h1 class="modal-title">Ny viden</h1>
+	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+	      </div>
+	  	  	<div class="embed-responsive embed-responsive-16by9">
+				<video controls preload="metadata" poster="grafik/nyviden.png">
+ 					<source src="video/1_studie.mp4" type="video/mp4">
+<!-- 					<track src="subs/afsender_en.vtt" kind="subtitles" srclang="en" label="English"> -->
+ 				</video>
+			</div>
+	    <div class="modal-body">
+			 <ul>
+				<li>1. pointe</li>
+				<li>2. pointe</li>
+				<li>3. pointe</li>
+			  </ul>
+      	</div>
+	    </div>
+	  </div>
+	</div>
+
+	<script>
+		//script til hover effekt på kategorier
+		$('.bogmaerke').hover(function(){
+			$(this).addClass('overlay-highlight');
+			$(this).toggleClass('overlay-darken');
+			$(this).siblings().toggleClass('overlay-darken');
+			$(this).siblings().removeClass('overlay-highlight');
+		})
+
+		$('.bogmaerke').mouseleave(function(){ //fjerner overlay ved når curser forlader elementer
+		    $('.bogmaerke').removeClass('overlay-darken');
+		});
+
+		var $videoSrc;  
+
+		$('.showModal').on('click', function() { // funktion viser modal ved klik
+			a = $(this).attr('id'); //henter ID på klikket element
+			b = '#' + a + "Modal"; //genererer ID-navn på Modal
+			$(b).modal({ show: true }); //viser Modal
+
+			$videoID = '#' + a + 'Video'; //generer ID på videoelement i berørte modal
+			$videoSrc = $(this).data( "src" ); //set source URL fra bogmærke
+		})
+
+		/*standser youtube afspilning når modal lukkes
+		$('.modal').on('hide.bs.modal', function(e) {    
+		var $if = $(e.delegateTarget).find('iframe');
+		var src = $if.attr("src");
+		$if.attr("src", '/empty.html');
+		$if.attr("src", src);
+});*/
+		
+		// pauser afspilning når modal lukkes
+		$('body').on('hidden.bs.modal', '.modal', function () {
+			$('video').trigger('load'); //ændret til load
+		});
+		
+		// Overlay fade out on load
+		$(window).on('load',function() {
+			$('#overlay-preload').delay(200).fadeOut('slow');
+		});
+	</script>
+</body>
+</html>

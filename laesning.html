@@ -1,0 +1,293 @@
+ <!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+<title>Fem korte</title>
+
+<link rel="icon" type="image/png" href="grafik/favicon-16x16.png" sizes="16x16">  
+<link rel="icon" type="image/png" href="grafik/favicon-32x32.png" sizes="32x32">  
+<link rel="icon" type="image/png" href="grafik/favicon-96x96.png" sizes="96x96">
+
+<!--bootstrap CDN CSS, JQuery og JavaScript biblioteker-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+<!--CSS til browser-->
+<link href="style.css" rel="stylesheet" type="text/css">
+	
+<!--Material design ikoner-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- jQuery bibliotek -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Seneste JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<!-- Title screen-->
+	
+<div id="overlay-preload"><span>Studielæsning</span></div>
+
+
+<!-- Top boks-->
+<div class="d-flex flex-row align-items-center justify-content-between" id="generelt">
+	
+	
+	<div class="d-flex align-items-end pl-2">
+		<div class="p-2"><img id="femkortelogo" src="grafik/5logo.svg"/></div>
+		<div id="apptitle">KORTE OM STUDIELÆSNING</div>
+	</div>
+	
+	<div class="d-flex">
+		<div class="align-items-center d-flex p-2 pr-4" >
+			<a href="index.html"><div id="hamburgermenu"></div>
+			</a>
+		</div>
+	</div>
+	
+</div>
+	
+	<div class="d-flex flex-sm-column flex-md-row align-items-md-center justify-sm-content-start">	
+	<div class="bogmaerke showModal d-flex flex-sm-row flex-md-column p-2" id="afsender">
+	  <div class="d-flex d-sm-flex d-md-block">
+	    <h4 class="kategori align-self-center">Om læsning</h4>
+		  <hr />
+	    <p class="mellemtekst p-2">Læs studietekster effektivt, og undgå frustrationer.</p>
+	  </div>
+	  <div class="d-flex flex-grow-1 justify-content-md-center justify-content-sm-end justify-content-end">
+	  	<img class="ikon align-self-md-end align-self-sm-center mb-md-5 mb-sm-0 align-self-center" src="grafik/formaal.svg" />
+	  </div>
+	</div>
+
+	<div class="bogmaerke showModal d-flex flex-sm-row flex-md-column p-2" id="relevans">
+	  <div class="d-flex d-sm-flex d-md-block">
+	    <h4 class="kategori align-self-center">Før</h4>
+		  <hr />
+	    <p class="mellemtekst p-2">Førlæsning giver dig et overblik over teksten - før du går i gang med at læse.</p>
+	  </div>
+	  <div class="d-flex flex-grow-1 justify-content-md-center justify-content-sm-end justify-content-end">
+	  	<img class="ikon align-self-md-end align-self-sm-center mb-md-5 mb-sm-0 align-self-center" src="grafik/foer-laesning.svg" />
+	  </div>
+	</div>
+
+	<div class="bogmaerke showModal d-flex flex-sm-row flex-md-column p-2" id="aktualitet">
+	  <div class="d-flex d-sm-flex d-md-block">
+	    <h4 class="kategori align-self-center">Under</h4>
+		  <hr />			 			  
+	    <p class="mellemtekst p-2">Under læsning, er det vigtigt at vælge den bedste læsemåde.</p>
+	    <br />
+	  </div>		
+	  <div class="d-flex flex-grow-1 justify-content-md-center justify-content-sm-end justify-content-end">	  
+	  	<img class="ikon align-self-md-end align-self-sm-center mb-md-5 mb-sm-0 align-self-center" src="grafik/open-book.svg" />		   
+	  </div>
+	</div>
+
+	<div class="bogmaerke showModal d-flex flex-sm-row flex-md-column p-2" id="motiv">
+	  <div class="d-flex d-sm-flex d-md-block">
+	    <h4 class="kategori align-self-center">Efter</h4>
+		  <hr />
+	    <p class="mellemtekst p-2">Efter læsning, er det en god idé at efterbearbejde teksten for at forbedre dit udbytte.</p>
+	  </div>
+	  <div class="d-flex flex-grow-1 justify-content-md-center justify-content-sm-end justify-content-end">
+	  	<img class="ikon align-self-md-end align-self-sm-center mb-md-5 mb-sm-0 align-self-center" src="grafik/efter-laesning.svg" />
+	  </div>
+	</div>
+	
+	<div class="bogmaerke showModal d-flex flex-sm-row flex-md-column p-2" id="argument">
+	  <div class="d-flex d-sm-flex d-md-block">
+	    <h4 class="kategori align-self-center">Tempo</h4>
+		  <hr />
+	    <p class="mellemtekst p-2">Sådan træner du din læsehastighed.</p>
+	  </div>
+	  <div class="d-flex flex-grow-1 justify-content-md-center justify-content-sm-end justify-content-end">
+	  	<img class="ikon align-self-md-end align-self-sm-center mb-md-5 mb-sm-0 align-self-center" src="grafik/hurtiglaesning.svg" />
+	  </div>
+	</div>
+	
+</div>
+
+<!-- Modaler -->
+
+	<!-- Læsning -->
+	<div id="afsenderModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog modal-lg">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header d-flex align-items-center">
+	      	<img src="grafik/formaal.svg" />
+	        <h1 class="modal-title">Om læsning</h1>
+	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+	      </div>
+	  	  	<div class="embed-responsive embed-responsive-16by9">
+	  	  		<video controls preload="metadata" poster="grafik/studielaesning.png">
+ 					<source src="https://bibliotek.kea.dk/images/femKorte/Laesning_OmLaesning.mp4" type="video/mp4">
+					<track src="subs/afsender_en.vtt" kind="subtitles" srclang="en" label="English">
+ 				</video>
+			</div>
+	    <div class="modal-body">
+			  <ul>
+				<li>Prioritér dit læsestof. Du har selv ansvar for at forstå teksterne.</li>
+				<li>Tænk over hvor du læser bedst og sæt tid af til at læse.</li>
+				<li>Sæt dig ind i de forskellige læsemåder. Det sparer tid og fremmer din forståelse.</li>
+			  </ul>
+      	</div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Før Læsning -->
+	<div id="relevansModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog modal-lg">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header d-flex align-items-center">
+	      	<img src="grafik/foer-laesning.svg" />
+	        <h1 class="modal-title">Før</h1>
+	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+	      </div>
+	  	  	<div class="embed-responsive embed-responsive-16by9">
+	  	  		<video controls preload="metadata" poster="grafik/foerlaesning.png">
+ 					<source src="https://bibliotek.kea.dk/images/femKorte/Laesning_Foer.mp4" type="video/mp4">
+					<track src="subs/relevans_en.vtt" kind="subtitles" srclang="en" label="English">
+ 				</video>
+			</div>
+	    <div class="modal-body">
+			  <ul>
+				<li>Kig på forsiden, bagsiden og indholdsfortegnelsen. Skim evt. overskrifter og faktabokse.</li>
+				<li>Tænk over dit formål med teksten: Hvad skal du have ud af den? Hvor grundigt skal den læses?</li>
+				<li>Aktivér din forhåndsviden. Hvad ved jeg om emnet i forvejen.</li>
+			  </ul>
+      	</div>
+	    </div>
+	  </div>
+	</div>
+	
+	<!-- UNDER LÆSNING -->
+	<div id="aktualitetModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog modal-lg">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header d-flex align-items-center">
+	      	<img src="grafik/open-book.svg" />
+	        <h1 class="modal-title">Under</h1>
+	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+	      </div>
+	  	  	<div class="embed-responsive embed-responsive-16by9">
+	  	  		<video controls preload="metadata" poster="grafik/underlaesning.png">
+ 					<source src="https://bibliotek.kea.dk/images/femKorte/Laesning_Under.mp4" type="video/mp4">
+					<track src="subs/aktualitet_en.vtt" kind="subtitles" srclang="en" label="English">
+ 				</video>
+			</div>
+	    <div class="modal-body">
+			<ul>
+				<li>Find ud af hvordan du skal læse din tekst? – Kan du nøjes med at skimme den, eller skal du også nærlæse passager?</li>
+				<li>Skimning - find tekstens interessante steder. Læs udefra og ind - indledning og konklusion først.</li>
+				<li>Nærlæsning - læs centrale passager grundigt og tag evt. noter samtidigt. </li>
+			  </ul>
+      	</div>
+	    </div>
+	  </div>
+	</div>
+	
+	<!-- EFTER LÆSNING -->
+	<div id="motivModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog modal-lg">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header d-flex align-items-center">
+	      	<img src="grafik/efter-laesning.svg" />
+	        <h1 class="modal-title">Efter</h1>
+	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+	      </div>
+	  	  	<div class="embed-responsive embed-responsive-16by9">
+	  	  		<video controls preload="metadata" poster="grafik/efterLaesning.png">
+ 					<source src="https://bibliotek.kea.dk/images/femKorte/Laesning_Efter.mp4" type="video/mp4">
+					<track src="subs/motiv_en.vtt" kind="subtitles" srclang="en" label="English">
+ 				</video>
+			</div>
+	    <div class="modal-body">
+			 <ul>
+				<li>Stil spørgsmål til teksten efter læsning. Har du forstået det hele?</li>
+				<li>Skriv evt. et kort resumé af teksten, eller lav et mindmap.</li>
+				<li>Opsøg aktivt svar på ting du undrer dig over i teksten.</li>
+			  </ul>
+      	</div>
+	    </div>
+	  </div>
+	</div>
+
+	<!--Tempo -->
+	<div id="argumentModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog modal-lg">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header d-flex align-items-center">
+	      	<img src="grafik/hurtiglaesning.svg" />
+	        <h1 class="modal-title">Tempo</h1>
+	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+	      </div>
+	  	  	<div class="embed-responsive embed-responsive-16by9">
+	  	  		<video controls preload="metadata" poster="grafik/tempo.png">
+ 					<source src="https://bibliotek.kea.dk/images/femKorte/Laesning_Tempo.mp4" type="video/mp4">
+					<track src="subs/argument_en.vtt" kind="subtitles" srclang="en" label="English">
+ 				</video>
+			</div>
+	    <div class="modal-body">
+			 <ul>
+				<li>Læs med færre og kortere fikseringer, hurtigere linjeskift og fremadrettet for at øge din hastighed.</li>
+				<li>Undgå stemmen der læser med og tilbagespring i læsningen.</li>
+				<li>Varier din læsehastighed og træn hurtiglæsning i intervaller.</li>
+			  </ul>
+      	</div>
+	    </div>
+	  </div>
+	</div>
+
+	<script>
+		//script til hover effekt på kategorier
+		$('.bogmaerke').hover(function(){
+			$(this).addClass('overlay-highlight');
+			$(this).toggleClass('overlay-darken');
+			$(this).siblings().toggleClass('overlay-darken');
+			$(this).siblings().removeClass('overlay-highlight');
+		})
+
+		$('.bogmaerke').mouseleave(function(){ //fjerner overlay ved når curser forlader elementer
+		    $('.bogmaerke').removeClass('overlay-darken');
+		});
+
+		var $videoSrc;  
+
+		$('.showModal').on('click', function() { // funktion viser modal ved klik
+			a = $(this).attr('id'); //henter ID på klikket element
+			b = '#' + a + "Modal"; //genererer ID-navn på Modal
+			$(b).modal({ show: true }); //viser Modal
+
+			$videoID = '#' + a + 'Video'; //generer ID på videoelement i berørte modal
+			$videoSrc = $(this).data( "src" ); //set source URL fra bogmærke
+		})
+
+		// pauser afspilning når modal lukkes
+		$('body').on('hidden.bs.modal', '.modal', function () {
+			$('video').trigger('load'); //ændret til load
+		});
+		
+		// Overlay fade out on load
+		$(window).on('load',function() {
+			$('#overlay-preload').delay(200).fadeOut('slow');
+		});
+	</script>
+</body>
+</html>

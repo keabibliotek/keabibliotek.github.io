@@ -1,0 +1,294 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+<title>Fem korte</title>
+
+<link rel="icon" type="image/png" href="grafik/favicon-16x16.png" sizes="16x16">  
+<link rel="icon" type="image/png" href="grafik/favicon-32x32.png" sizes="32x32">  
+<link rel="icon" type="image/png" href="grafik/favicon-96x96.png" sizes="96x96">
+
+<!--bootstrap CDN CSS, JQuery og JavaScript biblioteker-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+<!--CSS til browser-->
+<link href="style.css" rel="stylesheet" type="text/css">
+	
+<!--Material design ikoner-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- jQuery bibliotek -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Seneste JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+
+<!-- Title screen-->
+	
+<div id="overlay-preload"><span>Noter</span></div>
+
+<!-- Top boks-->
+<div class="d-flex flex-row align-items-center justify-content-between" id="generelt">
+	
+	
+	<div class="d-flex align-items-end pl-2">
+		<div class="p-2"><img id="femkortelogo" src="grafik/5logo.svg"/></div>
+		<div id="apptitle">KORTE OM NOTER</div>
+	</div>
+	
+	<div class="d-flex">
+		<div class="align-items-center d-flex p-2 pr-4" >
+			<a href="index.html"><div id="hamburgermenu"></div>
+			</a>
+		</div>
+	</div>
+	
+</div>
+
+	<div class="d-flex flex-sm-column flex-md-row align-items-md-center justify-sm-content-start">	
+	<div class="bogmaerke showModal d-flex flex-sm-row flex-md-column p-2" id="afsender">
+	  <div class="d-flex d-sm-flex d-md-block">
+	    <h4 class="kategori align-self-center">Om noter</h4>
+		  <hr />
+	    <p class="mellemtekst p-2">Tag altid noter, når du skal lære noget nyt eller svært. Det fremmer dit udbytte.</p>
+	  </div>
+	  <div class="d-flex flex-grow-1 justify-content-md-center justify-content-sm-end justify-content-end">
+	  	<img class="ikon align-self-md-end align-self-sm-center mb-md-5 mb-sm-0 align-self-center" src="grafik/formaal.svg" />
+	  </div>
+	</div>
+
+	<div class="bogmaerke showModal d-flex flex-sm-row flex-md-column p-2" id="relevans">
+	  <div class="d-flex d-sm-flex d-md-block">
+	    <h4 class="kategori align-self-center">Lektion</h4>
+		  <hr />
+	    <p class="mellemtekst p-2">Tag noter til undervisningen, hvis du vil have det maksimale udbytte og forbedre din evne til at huske stoffet.</p>
+	  </div>
+	  <div class="d-flex flex-grow-1 justify-content-md-center justify-content-sm-end justify-content-end">
+	  	<img class="ikon align-self-md-end align-self-sm-center mb-md-5 mb-sm-0 align-self-center" src="grafik/undervisnings-noter.svg" />
+	  </div>
+	</div>
+
+	<div class="bogmaerke showModal d-flex flex-sm-row flex-md-column p-2" id="aktualitet">
+	  <div class="d-flex d-sm-flex d-md-block">
+	    <h4 class="kategori align-self-center">Læsning</h4>
+		  <hr />			 			  
+	    <p class="mellemtekst p-2">Læsenoter hjælper dig til at huske stoffet, og reflektere over det du læser.</p>
+	    <br />
+	  </div>		
+	  <div class="d-flex flex-grow-1 justify-content-md-center justify-content-sm-end justify-content-end">	  
+	  	<img class="ikon align-self-md-end align-self-sm-center mb-md-5 mb-sm-0 align-self-center" src="grafik/laesning.svg" />		   
+	  </div>
+	</div>
+
+	<div class="bogmaerke showModal d-flex flex-sm-row flex-md-column p-2" id="motiv">
+	  <div class="d-flex d-sm-flex d-md-block">
+	    <h4 class="kategori align-self-center">Teknik</h4>
+		  <hr />
+	    <p class="mellemtekst p-2">God noteteknik giver strukturerede noter og optimerer dit læringsudbytte.</p>
+	  </div>
+	  <div class="d-flex flex-grow-1 justify-content-md-center justify-content-sm-end justify-content-end">
+	  	<img class="ikon align-self-md-end align-self-sm-center mb-md-5 mb-sm-0 align-self-center" src="grafik/cornell.svg" />
+	  </div>
+	</div>
+	
+	<div class="bogmaerke showModal d-flex flex-sm-row flex-md-column p-2" id="argument">
+	  <div class="d-flex d-sm-flex d-md-block">
+	    <h4 class="kategori align-self-center">Grafik</h4>
+		  <hr />
+	    <p class="mellemtekst p-2">Grafik, doodles og små tegninger hjælper dig til at huske og forstå bedre.</p>
+	  </div>
+	  <div class="d-flex flex-grow-1 justify-content-md-center justify-content-sm-end justify-content-end">
+	  	<img class="ikon align-self-md-end align-self-sm-center mb-md-5 mb-sm-0 align-self-center" src="grafik/visuelle-noter.svg" />
+	  </div>
+	</div>	
+</div>
+	
+	
+<!-- Modaler -->
+	
+	<!-- Noter -->
+	<div id="afsenderModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog modal-lg">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header d-flex align-items-center">
+	      	<img src="grafik/formaal.svg" />
+	        <h1 class="modal-title">Om noter</h1>
+	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+	      </div>
+	  	  	<div class="embed-responsive embed-responsive-16by9">
+	  	  		<video controls preload="metadata" poster="grafik/derfor.png">
+ 					<source src="https://bibliotek.kea.dk/images/femKorte/Noter_OmNoter.mp4" type="video/mp4">
+<!-- 					<track src="subs/afsender_en.vtt" kind="subtitles" srclang="en" label="English"> -->
+ 				</video>
+			</div>
+	    <div class="modal-body">
+			  <ul>
+				<li>Noter lagrer din viden. Du husker stoffet bedre.</li>
+				<li>Noter fastholder din koncentration. Du undgår at tankerne vandrer.</li>
+				<li>Noter hjælper dig til at bearbejde stoffet og forstå de vigtige pointer.</li>
+			  </ul>
+      	</div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Lektion -->
+	<div id="relevansModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog modal-lg">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header d-flex align-items-center">
+	      	<img src="grafik/undervisnings-noter.svg" />
+	        <h1 class="modal-title">Lektion</h1>
+	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+	      </div>
+	  	  	<div class="embed-responsive embed-responsive-16by9">
+	  	  		<video controls preload="metadata" poster="grafik/lektion.png">
+ 					<source src="https://bibliotek.kea.dk/images/femKorte/Noter_Lektion.mp4" type="video/mp4">
+<!-- 					<track src="subs/relevans_en.vtt" kind="subtitles" srclang="en" label="English"> -->
+ 				</video>
+			</div>
+	    <div class="modal-body">
+			  <ul>
+				<li>Vær aktiv. Aktiver din hjerne. Få bedre indlæring.</li>
+				<li>Selektér i stoffet. Kvalitet fremfor kvantitet. Lidt men godt.</li>
+				<li>Skriv ikke alt ned. Brug dine egne ord. Gør stoffet til dit eget.</li>
+			  </ul>
+      	</div>
+	    </div>
+	  </div>
+	</div>
+	
+	
+	<!-- Læsning -->
+	<div id="aktualitetModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog modal-lg">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header d-flex align-items-center">
+	      	<img src="grafik/laesning.svg" />
+	        <h1 class="modal-title">Læsning</h1>
+	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+	      </div>
+	  	  	<div class="embed-responsive embed-responsive-16by9">
+	  	  		<video controls preload="metadata" poster="grafik/laesenoter.png">
+ 					<source src="https://bibliotek.kea.dk/images/femKorte/Noter_Laesning.mp4" type="video/mp4">
+					<track src="subs/aktualitet_en.vtt" kind="subtitles" srclang="en" label="English">
+ 				</video>
+			</div>
+	    <div class="modal-body">
+			<ul>
+				<li>Skriv dine noter i margin eller på papir.</li>
+				<li>Highlight vigtige passager og begreber.</li>
+				<li>Brug post-its til at inddele bogen, så du nemmere kan finde rundt.</li>
+			  </ul>
+      	</div>
+	    </div>
+	  </div>
+	</div>
+	
+	<!-- Teknik -->
+	<div id="motivModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog modal-lg">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header d-flex align-items-center">
+	      	<img src="grafik/cornell.svg" />
+	        <h1 class="modal-title">Teknik</h1>
+	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+	      </div>
+	  	  	<div class="embed-responsive embed-responsive-16by9">
+	  	  		<video controls preload="metadata" poster="grafik/noteteknik.png">
+ 					<source src="https://bibliotek.kea.dk/images/femKorte/Noter_Teknik.mp4" type="video/mp4">
+					<track src="subs/motiv_en.vtt" kind="subtitles" srclang="en" label="English">
+ 				</video>
+			</div>
+	    <div class="modal-body">
+			 <ul>
+				<li>Noter i hånden kan føles mere frit – det er f.eks. nemmere at lave visuelle noter i hånden.</li>
+				<li>Digitale noter er lettere at organisere. Det er nemt at søge efter begreber, datoer og litteraturhenvisninger.</li>
+				<li>Digitale noter kan være en ulempe, hvis du let bliver distraheret af sociale medier, spil eller lignede.</li>
+			  </ul>
+      	</div>
+	    </div>
+	  </div>
+	</div>
+
+	<!--Grafisk -->
+	<div id="argumentModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog modal-lg">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header d-flex align-items-center">
+	      	<img src="grafik/visuelle-noter.svg" />
+	        <h1 class="modal-title">Grafik</h1>
+	        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+	      </div>
+	  	  	<div class="embed-responsive embed-responsive-16by9">
+	  	  		<video controls preload="metadata" poster="grafik/visuelle.png">
+ 					<source src="https://bibliotek.kea.dk/images/femKorte/Noter_Grafik.mp4" type="video/mp4">
+<!-- 					<track src="subs/argument_en.vtt" kind="subtitles" srclang="en" label="English"> -->
+ 				</video>
+			</div>
+	    <div class="modal-body">
+			 <ul>
+				<li>Grafiske noter stimulerer din kreative tænkning.</li>
+				<li>Grafiske noter hjælper forståelsen af komplicerede sammenhænge.</li>
+				<li>Grafiske noter behøver ikke være stor kunst. Find din egen stil og brug de symboler, der giver mening for dig.</li>
+			  </ul>
+      	</div>
+	    </div>
+	  </div>
+	</div>
+
+	<script>
+		//script til hover effekt på kategorier
+		$('.bogmaerke').hover(function(){
+			$(this).addClass('overlay-highlight');
+			$(this).toggleClass('overlay-darken');
+			$(this).siblings().toggleClass('overlay-darken');
+			$(this).siblings().removeClass('overlay-highlight');
+		})
+
+		$('.bogmaerke').mouseleave(function(){ //fjerner overlay ved når curser forlader elementer
+		    $('.bogmaerke').removeClass('overlay-darken');
+		});
+
+		var $videoSrc;  
+
+		$('.showModal').on('click', function() { // funktion viser modal ved klik
+			a = $(this).attr('id'); //henter ID på klikket element
+			b = '#' + a + "Modal"; //genererer ID-navn på Modal
+			$(b).modal({ show: true }); //viser Modal
+
+			$videoID = '#' + a + 'Video'; //generer ID på videoelement i berørte modal
+			$videoSrc = $(this).data( "src" ); //set source URL fra bogmærke
+		})
+
+		// pauser afspilning når modal lukkes
+		$('body').on('hidden.bs.modal', '.modal', function () {
+			$('video').trigger('load'); //ændret til load
+		});
+		
+		// Overlay fade out on load
+		$(window).on('load',function() {
+			$('#overlay-preload').delay(200).fadeOut('slow');
+		});
+	</script>
+</body>
+</html>

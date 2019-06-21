@@ -16,6 +16,130 @@ body{
   background-color: black; /*baggrundsfarve sort for markant hover effekt*/
 }
 
+/* Hovedmenu*/
+
+.menu a {
+    padding: 1rem;
+	margin-top: 5px;
+    text-decoration: none;
+    font-size: 3rem;
+	font-family: Lato;
+    color: #f1f1f1;
+    /*display: block;*/
+    transition: 0.3s;
+	line-height: 3rem;
+}
+
+.top{ 
+	position: relative;
+	height: 4rem;}
+
+#kilder {	
+  background: linear-gradient(to left, black 50%, #40BEDD 50%);
+  background-size:200% 100%;
+  background-position: right bottom;
+  border-left: solid #40BEDD 3rem;
+}
+
+#kilder:hover, #kildekritik:focus {
+  background-position: left bottom;
+  transition: ease-in-out 0.2s;
+}
+
+#noter {
+  background: linear-gradient(to left, black 50%, #F28822 50%);
+  background-size:200% 100%;
+  background-position: right bottom;
+  border-left: solid #F28822 3rem;
+}
+
+#noter:hover {
+  background-position: left bottom;
+  transition: ease-in-out 0.2s;
+}
+
+#laesning {
+  background: linear-gradient(to left, black 50%, #1AAB8B 50%);
+  background-size:200% 100%;
+  background-position: right bottom;
+  border-left: solid #1AAB8B 3rem;
+}
+
+#laesning:hover {
+  background-position: left bottom;
+  transition: ease-in-out 0.2s;
+}
+
+
+#planlaegning {
+  background: linear-gradient(to left, black 50%, #DD4863 50%);
+  background-size:200% 100%;
+  background-position: right bottom;
+  border-left: solid #DD4863 3rem;
+}
+
+#planlaegning:hover {
+  background-position: left bottom;
+  transition: ease-in-out 0.2s;
+}
+
+
+#research {
+  background: linear-gradient(to left, black 50%, #8D80AD 50%);
+  background-size:200% 100%;
+  background-position: right bottom;
+  border-left: solid #8D80AD 3rem;
+}
+
+#research:hover {
+  background-position: left bottom;
+  transition: ease-in-out 0.2s;
+}
+
+#femkortemenulogo {
+  background-image: url('grafik/5logo.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#appmenulogo {
+  background-image: url('grafik/applogo.svg');
+  margin-top:30px;
+  width: 5rem;
+  min-height: 5rem;
+  background-repeat: no-repeat;
+}
+
+#omAppen {
+  background: url('grafik/om-sprite.svg');
+  cursor: pointer;
+  width:2.5rem;
+  min-height:2.5rem;
+  background-position:left;
+  background-repeat: no-repeat;
+  background-size:200%;
+}
+
+#omAppen:hover {
+  background: url('grafik/om-sprite.svg');
+  cursor: pointer;
+  width:2.5rem;
+  min-height:2.5rem;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size:200%;
+}
+
+#femlogo {
+  background: url('grafik/5logo.svg');
+  height: 3.5rem;
+  width: 3.5rem;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:contain;	
+}
+
+
 /*Breakpoints
 
 .kategori: position sættes for at kunne placere elementerne, top sættes til 50% for at centrere teksten i elementet, transform sættes med translateY for at få teksten det sidste stykke op.
@@ -34,6 +158,7 @@ body{
   .ikon {float:right;}
   .flex-sm-column {height: 90%; width:100%;flex-direction: column;}
   .bogmaerke {width: 100%; height: 30%; border-left: 0; border-right: 0; border-top: 1px solid white; border-bottom: 1px solid white;}
+  .w-50{width:100%;}
 }
  
 /* Medium & large devices (tablets, 768px and up) */
@@ -50,11 +175,12 @@ body{
     border: 2px solid white;
   }
   hr, h5 {display: block;}
+	
 }
 
 /* TOP BOKS*/
 #generelt {
-  height:10%;
+  height:10%;	
   width: 100%;
   font-size:.7rem; 
   color: #fff;
@@ -76,26 +202,42 @@ body{
 }
 
 #femkortelogo {
-  background-image: url('grafik/5kortelogo.png');
-  width: 8rem;
-  min-height:8rem;
-  background-size: 8rem;
-  background-repeat: no-repeat;
-  background-position: center;
+  height:3rem;
 }
 
-#applogo {
-  background-image: url('grafik/applogo.svg');
-  width: 5rem;
-  min-height: 5rem;
+#kealogo {
+  height: 2rem;
+}
+
+#hamburgermenu {
+  background: url('grafik/menu-icon.svg');
+  cursor: pointer;
+  width:2rem;
+  min-height:2rem;
+  background-position:center;
   background-repeat: no-repeat;
-  background-position: center;
+  background-size:200%;
+}
+
+#apptitle{
+  font-family: roboto;
+  font-size:1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: title 1s ease-in-out;	
+  animation-delay: 1.5s;
+  animation-fill-mode: both;
+  margin-left:0.5rem;
+}
+@keyframes title{ 
+  0% { width: 0%;}
+  100% { width: 100%;}
+ /* from {color: #40BEDD;}
+    to {color: white;}*/
 }
 
 #play-icon {
-  /*background-image: url('grafik/play.svg');*/
   background: url('grafik/play-sprite.svg') 0px 0px;
-  /*width: 24px;*/
   width:2rem;
   min-height:2rem;
   background-position: right;
@@ -104,7 +246,6 @@ body{
 }
 
 #play-icon:hover {
-  /*background-image: url('grafik/play-sprite.svg');*/
   background: url('grafik/play-sprite.svg') 0px 0px;
   cursor: pointer;
   width:2rem;
@@ -115,7 +256,6 @@ body{
 }
 
 #henvisninger-icon {
-  /*background-image: url('grafik/henvisninger.svg');*/
   background: url('grafik/henvisninger-sprite.svg');
   width:2rem;
   min-height:2rem;
@@ -125,7 +265,6 @@ body{
 }
 
 #henvisninger-icon:hover {
-  /*background-image: url('grafik/henvisninger-hover.svg');*/
   background: url('grafik/henvisninger-sprite.svg');
   cursor: pointer;
   width:2rem;
@@ -135,28 +274,30 @@ body{
   background-size:200%;
 }
 
-#om-icon {
-  background: url('grafik/om-sprite.svg');
-  cursor: pointer;
-  width:2rem;
-  min-height:2rem;
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size:200%;
-}
-
-#om-icon:hover {
-  background: url('grafik/om-sprite.svg');
-  cursor: pointer;
-  width:2rem;
-  min-height:2rem;
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size:200%;
-}
 .row {
   margin-right: 0;
   margin-left: 0;
+}
+
+
+/*Overlay*/
+
+#overlay-preload {
+	background: rgba(0,0,0,0.8);
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	color: #ffffff;
+	font-size: 6rem;
+	text-align: center;
+	display: flex; 
+ 	align-items: center;
+    justify-content: center;
+}
+
+#overlay-preload span {
+	font-family: "Roboto";
 }
 
 /*fælles css for alle bogmaerker*/
@@ -168,7 +309,7 @@ body{
   display: inline-block; /* forhindre at cards fordeler sig over flere rækker ved 1-række visning (små enheder) */
   padding: 1px;
   transition: opacity .8s;
-/*  transition: ease-in-out .8s;
+	/*  transition: ease-in-out .8s;
 */}
 
 .bogmaerke:hover{ 
@@ -179,14 +320,7 @@ body{
   z-index: 1;
   transition: opacity .8s;
   cursor:pointer;
-/*  transition: ease-in-out 0.2s; 
-*/  /*outline-offset:-7.5px;*/
 }
-
-/*.topbaroverlay{
-  z-index: 1;
-  transition: opacity .8s;
-}*/
 
 .kategori{
   white-space: nowrap;
@@ -208,29 +342,29 @@ body{
 
 /*FARVER på bogmærker*/
 #generelt, .topbar, .modal-content .modal-header {
-	background-color: rgb(35,50,73);
+background-color: #233249;
 }
 
-
-#aktualitet, #aktualitetModal .modal-content .modal-header, #aktualitetModal .modal-content .modal-body {
-  background-color: rgb(0,171,138);
-  /*background-image: linear-gradient(rgb(0,171,138));*/
+#afsender, #afsenderModal .modal-content .modal-header, #afsenderModal .modal-content .modal-body {
+	background-color: rgb(61, 188, 220);
 }
 
 #relevans, #relevansModal .modal-content .modal-header, #relevansModal .modal-content .modal-body {
 	background-color: rgb(245,140,15); /*rgb(29,122,35) - rgb(43,179,52)*/
 }
-
-#argument, #argumentModal .modal-content .modal-header, #argumentModal .modal-content .modal-body{
-  background-color: rgb(142,127,174);
-}
-
-#afsender, #afsenderModal .modal-content .modal-header, #afsenderModal .modal-content .modal-body {
-	background-color: rgb(61,188,220);
+#aktualitet, #aktualitetModal .modal-content .modal-header, #aktualitetModal .modal-content .modal-body {
+  background-color: rgb(0,171,138);
+ /*background-image: -webkit-linear-gradient(rgb(0,171,138));*/;
+  /*background-image: -o-linear-gradient(rgb(0,171,138));*/;
+ /*background-image: linear-gradient(rgb(0,171,138));*/;
 }
 
 #motiv, #motivModal .modal-content .modal-header, #motivModal .modal-content .modal-body{
   background-color: rgb(223,70,97);
+}
+
+#argument, #argumentModal .modal-content .modal-header, #argumentModal .modal-content .modal-body{
+  background-color: rgb(142,127,174);
 }
 
 .modal-body { /*gradient på modal body*/
@@ -240,13 +374,11 @@ body{
 /* HOVER */
 .overlay-darken {
   opacity: .4;
-  /*transition: ease-in-out 1s; */
 }
 
 .overlay-highlight {
   opacity: 1;
-/*  transition: ease-in-out 0.4s; 
-*/}
+}
 
 /* HEADERS */
 h4 {
@@ -316,36 +448,6 @@ div.modaltekst{
  	width:100%;
 }
 
-/*#omAppen_modal{
-  color: black;
-  background-image:url(grafik/om.jpg);
-  background-size: cover;
-}*/
-
-/*#kildehenvisninger_modal{
-  color: black;
-  background-image:url(grafik/kildehenvisninger.jpg);
-  background-size: cover;
-}*/
-
-/*.modal .tips-container {
-  height: 140px;
-}
-
-.modal .tjek{
-  font-size: 1.1rem;
-  text-align: left;
-  font-family: 'Lato';
-  float: left;
-  width: 85%;
-}*/
-
-/*.i-icon {
-  content:url(grafik/info-24px.svg);
-  width:2vw;
-  height: 2vh;
-}*/
-
 .modal-content{
   border: 1px solid white; /*fjerner hvid border i header og fooder*/
 }
@@ -400,8 +502,3 @@ div.modaltekst{
         border: solid 1px rgba(255, 255, 255, .5);
         font-family: Lato;
     }
-
-
-   /* li:nth-child(even){
-        background-color: #434A54;
-    }*/
