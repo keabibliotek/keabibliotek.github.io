@@ -313,10 +313,10 @@ body{
 */}
 
 .bogmaerke:hover{ 
-  outline-width: 0px;
+  /*outline-width: 0px;*/
   outline-style: solid;
-  outline-color: rgba(50,50,50,1);
-  outline-offset: -5px;
+  outline-color: rgba(50,50,50,0);
+  /*outline-offset: -5px;*/
   z-index: 1;
   transition: opacity .8s;
   cursor:pointer;
