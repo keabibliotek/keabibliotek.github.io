@@ -448,6 +448,11 @@ div.modaltekst{
  	width:100%;
 }
 
+#deffimage{
+	width:8rem;
+	padding: 1rem 0rem 1rem 0rem;
+}
+
 .modal-content{
   border: 1px solid white; /*fjerner hvid border i header og fooder*/
 }
