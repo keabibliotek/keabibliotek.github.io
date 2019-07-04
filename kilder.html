@@ -134,9 +134,10 @@
    					width="560" height="315">
 					</object>-->
 				
-	  	  		<video controls preload="metadata" poster="grafik/generelt.png">
+	  	  		<video playsinline controls preload="metadata" poster="grafik/generelt.png">
  					<source src="https://bibliotek.kea.dk/images/femKorte/Kilder_Intro.mp4" type="video/mp4">
-					<track src="subs/generelt_en.vtt" kind="subtitles" srclang="en" label="English">
+					<track src="subs/kilder/Kilder_Intro_en.vtt" kind="subtitles" srclang="en" label="English">
+					<track src="subs/kilder/Kilder_Intro.vtt" kind="subtitles" srclang="da" label="Danish">
  				</video>
 			</div>
 	  	</div>
@@ -194,9 +195,10 @@
 	      </div>
 	  	  	<div class="embed-responsive embed-responsive-16by9">
 				<!--<iframe src="https://www.youtube.com/embed/HbpokqJOR2g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
-	  	  		<video controls preload="metadata" poster="grafik/afsender.png">
+	  	  		<video playsinline controls preload="metadata" poster="grafik/afsender.png">
  					<source src="https://bibliotek.kea.dk/images/femKorte/Kilder_Afsender.mp4" type="video/mp4">
-					<track src="subs/afsender_en.vtt" kind="subtitles" srclang="en" label="English">
+					<track src="subs/kilder/Kilder_Afsender_en.vtt" kind="subtitles" srclang="en" label="English">
+					<track src="subs/kilder/Kilder_Afsender.vtt" kind="subtitles" srclang="da" label="Danish">
  				</video>
 			</div>
 	    <div class="modal-body">
@@ -224,9 +226,10 @@
 	      </div>
 	  	  	<div class="embed-responsive embed-responsive-16by9">
 				<!--<iframe src="https://www.youtube.com/embed/Cj5dJLQzxa8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
-	  	  		<video controls preload="metadata" poster="grafik/relevans.png">
+	  	  		<video playsinline controls preload="metadata" poster="grafik/relevans.png">
  					<source src="https://bibliotek.kea.dk/images/femKorte/Kilder_Relevans.mp4" type="video/mp4">
-					<track src="subs/relevans_en.vtt" kind="subtitles" srclang="en" label="English">
+					<track src="subs/kilder/Kilder_Relevans_en.vtt" kind="subtitles" srclang="en" label="English">
+					<track src="subs/kilder/Kilder_Relevans.vtt" kind="subtitles" srclang="da" label="Danish">
  				</video>
 			</div>
 	    <div class="modal-body">
@@ -254,9 +257,10 @@
 	      </div>
 	  	  	<div class="embed-responsive embed-responsive-16by9">
 				<!--<iframe src="https://www.youtube.com/embed/tEU1eVAYeLU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
-	  	  		<video controls preload="metadata" poster="grafik/argument.png">
+	  	  		<video playsinline controls preload="metadata" poster="grafik/argument.png">
  					<source src="https://bibliotek.kea.dk/images/femKorte/Kilder_Argument.mp4" type="video/mp4">
-					<track src="subs/argument_en.vtt" kind="subtitles" srclang="en" label="English">
+					<track src="subs/kilder/Kilder_Argument_en.vtt" kind="subtitles" srclang="en" label="English">
+					<track src="subs/kilder/Kilder_Argument.vtt" kind="subtitles" srclang="da" label="Danish">
  				</video>
 			</div>
 	    <div class="modal-body">
@@ -284,9 +288,10 @@
 	      </div>
 	  	  	<div class="embed-responsive embed-responsive-16by9">
 				<!--<iframe src="https://www.youtube.com/embed/SXmn6V6sYJY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
-	  	  		<video controls preload="metadata" poster="grafik/motiv.png">
+	  	  		<video playsinline controls preload="metadata" poster="grafik/motiv.png">
  					<source src="https://bibliotek.kea.dk/images/femKorte/Kilder_Motiv.mp4" type="video/mp4">
-					<track src="subs/motiv_en.vtt" kind="subtitles" srclang="en" label="English">
+					<track src="subs/kilder/Kilder_Motiv_en.vtt" kind="subtitles" srclang="en" label="English">
+					<track src="subs/kilder/Kilder_Motiv.vtt" kind="subtitles" srclang="da" label="Danish">
  				</video>
 			</div>
 	    <div class="modal-body">
@@ -314,9 +319,10 @@
 	      </div>
 	  	  	<div class="embed-responsive embed-responsive-16by9">
 				<!--<iframe src="https://www.youtube.com/embed/dGHnO-YXj1U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
-	  	  		<video controls preload="metadata" poster="grafik/aktualitet.png">
+	  	  		<video playsinline controls preload="metadata" poster="grafik/aktualitet.png">
  					<source src="https://bibliotek.kea.dk/images/femKorte/Kilder_Aktualitet.mp4" type="video/mp4">
-					<track src="subs/aktualitet_en.vtt" kind="subtitles" srclang="en" label="English">
+					<track src="subs/kilder/Kilder_Aktualitet_en.vtt" kind="subtitles" srclang="en" label="English">
+					<track src="subs/kilder/Kilder_Aktualitet.vtt" kind="subtitles" srclang="da" label="Danish">
  				</video>
 			</div>
 	    <div class="modal-body">
@@ -366,7 +372,8 @@
 		
 		// pauser afspilning når modal lukkes
 		$('body').on('hidden.bs.modal', '.modal', function () {
-			$('video').trigger('load'); //ændret til load
+			$('video').trigger('pause'); //ændret fra load
+			$('video').prop('currentTime',0);
 		});
 		
 		//sætter farveskema

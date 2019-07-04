@@ -123,9 +123,10 @@
 			</button>
 	      </div>
 	  	  	<div class="embed-responsive embed-responsive-16by9">
-	  	  		<video controls preload="metadata" poster="grafik/paastudiet.png">
+	  	  		<video playsinline controls preload="metadata" poster="grafik/paastudiet.png">
  					<source src="https://bibliotek.kea.dk/images/femKorte/Planlaegning_PaaStudiet.mp4" type="video/mp4">
-<!-- 					<track src="subs/afsender_en.vtt" kind="subtitles" srclang="en" label="English"> -->
+					<track src="subs/planlaegning/Planlaegning_PaaStudiet_en.vtt" kind="subtitles" srclang="en" label="English">
+					<track src="subs/planlaegning/Planlaegning_PaaStudiet.vtt" kind="subtitles" srclang="da" label="Danish"> 
  				</video>
 			</div>
 	    <div class="modal-body">
@@ -152,9 +153,10 @@
 			</button>
 	      </div>
 	  	  	<div class="embed-responsive embed-responsive-16by9">
-	  	  		<video controls preload="metadata" poster="grafik/samarbejde.png">
+	  	  		<video playsinline controls preload="metadata" poster="grafik/samarbejde.png">
  					<source src="https://bibliotek.kea.dk/images/femKorte/Planlaegning_Samarbejde.mp4" type="video/mp4">
-<!-- 					<track src="subs/relevans_en.vtt" kind="subtitles" srclang="en" label="English"> -->
+					<track src="subs/planlaegning/Planlaegning_Samarbejde_en.vtt" kind="subtitles" srclang="en" label="English">
+					<track src="subs/planlaegning/Planlaegning_Samarbejde.vtt" kind="subtitles" srclang="da" label="Danish"> 
  				</video>
 			</div>
 	    <div class="modal-body">
@@ -182,9 +184,10 @@
 			</button>
 	      </div>
 	  	  	<div class="embed-responsive embed-responsive-16by9">
-	  	  		<video controls preload="metadata" poster="grafik/worklife.png">
+	  	  		<video playsinline controls preload="metadata" poster="grafik/worklife.png">
  					<source src="https://bibliotek.kea.dk/images/femKorte/Planlaegning_Worklife.mp4" type="video/mp4">
-					<!--<track src="subs/aktualitet_en.vtt" kind="subtitles" srclang="en" label="English">-->
+					<track src="subs/planlaegning/Planlaegning_Worklife_en.vtt" kind="subtitles" srclang="en" label="English">
+					<track src="subs/planlaegning/Planlaegning_Worklife.vtt" kind="subtitles" srclang="da" label="Danish"> 
  				</video>
 			</div>
 	    <div class="modal-body">
@@ -211,9 +214,10 @@
 			</button>
 	      </div>
 	  	  	<div class="embed-responsive embed-responsive-16by9">
-	  	  		<video controls preload="metadata" poster="grafik/vaerktoejer.png">
+	  	  		<video playsinline controls preload="metadata" poster="grafik/vaerktoejer.png">
  					<source src="https://bibliotek.kea.dk/images/femKorte/Planlaegning_Vaerktoejer.mp4" type="video/mp4">
-					<!--<track src="subs/motiv_en.vtt" kind="subtitles" srclang="en" label="English">-->
+					<track src="subs/planlaegning/Planlaegning_Vaerktoejer_en.vtt" kind="subtitles" srclang="en" label="English">
+					<track src="subs/planlaegning/Planlaegning_Vaerktoejer.vtt" kind="subtitles" srclang="da" label="Danish"> 
  				</video>
 			</div>
 	    <div class="modal-body">
@@ -240,9 +244,10 @@
 			</button>
 	      </div>
 	  	  	<div class="embed-responsive embed-responsive-16by9">
-	  	  		<video controls preload="metadata" poster="grafik/goderaad.png">
+	  	  		<video playsinline controls preload="metadata" poster="grafik/goderaad.png">
  					<source src="https://bibliotek.kea.dk/images/femKorte/Planlaegning_GodeRaad.mp4" type="video/mp4">
-<!-- 					<track src="subs/argument_en.vtt" kind="subtitles" srclang="en" label="English"> -->
+					<track src="subs/planlaegning/Planlaegning_GodeRaad_en.vtt" kind="subtitles" srclang="en" label="English">
+					<track src="subs/planlaegning/Planlaegning_GodeRaad.vtt" kind="subtitles" srclang="da" label="Danish"> 
  				</video>
 			</div>
 	    <div class="modal-body">
@@ -282,7 +287,8 @@
 
 		// pauser afspilning når modal lukkes
 		$('body').on('hidden.bs.modal', '.modal', function () {
-			$('video').trigger('load'); //ændret til load
+			$('video').trigger('pause'); //ændret fra load
+			$('video').prop('currentTime',0);
 		});
 		
 		// Overlay fade out on load

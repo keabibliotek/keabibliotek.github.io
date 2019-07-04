@@ -61,9 +61,9 @@
 			  <img src="grafik/om.jpg" class="topimage">
 			  <div class="modaltekst">
 			  	<h2 class="topoverskrift">FEM KORTE</h2>
-				<p class="broedtekst">Version 2.00
-				<br><br>
-				Appen er udviklet på KEA Bibliotek 2017-2019, som en del af en co-creation proces mellem bibliotekets ansatte og de studerende på KEA.
+				<!--<p class="broedtekst">Version 2.00
+				<br><br>-->
+				<p class="broedtekst">Appen er udviklet på KEA Bibliotek 2017-2019, som en del af en co-creation proces mellem bibliotekets ansatte og de studerende på KEA.
 				<br><br/>
 				<img id="deffimage" src="grafik/Deff.png"> <br><br>
 				Punkterne noter, studielæsning, planlægning og research er delvist finansieret af Danmarks Elektroniske Fag- og Forskningsbibliotek (DEFF) som del af projektet:<i> Digital transformation i bibliotekernes læringsprodukter– udvikling af app-serie om studieteknik og informationskompetencer til brug for studerende på videregående uddannelser samt gymnasieelever.</i> 
@@ -72,9 +72,9 @@
 				<br><br/>
 				<strong>Udviklere og medvirkende:</strong>
 				<br>
-				Ida Fallentin, Daniel Præsius, Martin Gundtoft, Frederick Lehmann Franck, Jonas Winding, Pia Hjuler Clemmensen, Helle Guldberg, Stine Lian Olsen og Simon Munk.
+				Ida Fallentin, Daniel Præsius, Martin Gundtoft, Frederick Lehmann Franck, Jonas Winding, Pia Hjuler Clemmensen, Helle Guldberg, Stine Lian Olsen, Simon Munk og Dorottya Fehér.
 				<br><br>
-				<strong>Tak til alle de studerende på KEA, der har hjulpet under udviklingen.</strong></p>
+				<strong>Tak til alle de studerende på KEA, der har hjulpet under udviklingen. En særlig tak til Frederik, Natasia og Rasmus for deres medvirken.</strong></p>
 				  <br/>
 			    <hr class="linje">
 				  <br/>
@@ -127,7 +127,8 @@
 
 		// pauser afspilning når modal lukkes
 		$('body').on('hidden.bs.modal', '.modal', function () {
-			$('video').trigger('load'); //ændret til load
+			$('video').trigger('pause'); //ændret fra load
+			$('video').prop('currentTime',0);
 		});
 		
 		

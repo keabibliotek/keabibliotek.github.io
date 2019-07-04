@@ -123,9 +123,10 @@
 			</button>
 	      </div>
 	  	  	<div class="embed-responsive embed-responsive-16by9">
-	  	  		<video controls preload="metadata" poster="grafik/derfor.png">
+	  	  		<video playsinline controls preload="metadata" poster="grafik/derfor.png">
  					<source src="https://bibliotek.kea.dk/images/femKorte/Noter_OmNoter.mp4" type="video/mp4">
-<!-- 					<track src="subs/afsender_en.vtt" kind="subtitles" srclang="en" label="English"> -->
+					<track src="subs/noter/Noter_OmNoter_en.vtt" kind="subtitles" srclang="en" label="English">
+					<track src="subs/noter/Noter_OmNoter.vtt" kind="subtitles" srclang="da" label="Danish"> 
  				</video>
 			</div>
 	    <div class="modal-body">
@@ -152,9 +153,10 @@
 			</button>
 	      </div>
 	  	  	<div class="embed-responsive embed-responsive-16by9">
-	  	  		<video controls preload="metadata" poster="grafik/lektion.png">
+	  	  		<video playsinline controls preload="metadata" poster="grafik/lektion.png">
  					<source src="https://bibliotek.kea.dk/images/femKorte/Noter_Lektion.mp4" type="video/mp4">
-<!-- 					<track src="subs/relevans_en.vtt" kind="subtitles" srclang="en" label="English"> -->
+					<track src="subs/noter/Noter_Lektion_en.vtt" kind="subtitles" srclang="en" label="English">
+					<track src="subs/noter/Noter_Lektion.vtt" kind="subtitles" srclang="da" label="Danish"> 
  				</video>
 			</div>
 	    <div class="modal-body">
@@ -182,9 +184,10 @@
 			</button>
 	      </div>
 	  	  	<div class="embed-responsive embed-responsive-16by9">
-	  	  		<video controls preload="metadata" poster="grafik/laesenoter.png">
+	  	  		<video playsinline controls preload="metadata" poster="grafik/laesenoter.png">
  					<source src="https://bibliotek.kea.dk/images/femKorte/Noter_Laesning.mp4" type="video/mp4">
-					<track src="subs/aktualitet_en.vtt" kind="subtitles" srclang="en" label="English">
+					<track src="subs/noter/Noter_Laesning_en.vtt" kind="subtitles" srclang="en" label="English">
+					<track src="subs/noter/Noter_Laesning.vtt" kind="subtitles" srclang="da" label="Danish"> 
  				</video>
 			</div>
 	    <div class="modal-body">
@@ -211,16 +214,17 @@
 			</button>
 	      </div>
 	  	  	<div class="embed-responsive embed-responsive-16by9">
-	  	  		<video controls preload="metadata" poster="grafik/noteteknik.png">
+	  	  		<video playsinline controls preload="metadata" poster="grafik/noteteknik.png">
  					<source src="https://bibliotek.kea.dk/images/femKorte/Noter_Teknik.mp4" type="video/mp4">
-					<track src="subs/motiv_en.vtt" kind="subtitles" srclang="en" label="English">
+					<track src="subs/noter/Noter_Teknik_en.vtt" kind="subtitles" srclang="en" label="English">
+					<track src="subs/noter/Noter_Teknik.vtt" kind="subtitles" srclang="da" label="Danish"> 
  				</video>
 			</div>
 	    <div class="modal-body">
 			 <ul>
 				<li>Noter i hånden kan føles mere frit – det er f.eks. nemmere at lave visuelle noter i hånden.</li>
 				<li>Digitale noter er lettere at organisere. Det er nemt at søge efter begreber, datoer og litteraturhenvisninger.</li>
-				<li>Digitale noter kan være en ulempe, hvis du let bliver distraheret af sociale medier, spil eller lignede.</li>
+				<li>Digitale noter kan være en ulempe, hvis du let bliver distraheret af sociale medier, spil eller lignende.</li>
 			  </ul>
       	</div>
 	    </div>
@@ -240,9 +244,10 @@
 			</button>
 	      </div>
 	  	  	<div class="embed-responsive embed-responsive-16by9">
-	  	  		<video controls preload="metadata" poster="grafik/visuelle.png">
+	  	  		<video playsinline controls preload="metadata" poster="grafik/visuelle.png">
  					<source src="https://bibliotek.kea.dk/images/femKorte/Noter_Grafik.mp4" type="video/mp4">
-<!-- 					<track src="subs/argument_en.vtt" kind="subtitles" srclang="en" label="English"> -->
+					<track src="subs/noter/Noter_Grafik_en.vtt" kind="subtitles" srclang="en" label="English">
+					<track src="subs/noter/Noter_Grafik.vtt" kind="subtitles" srclang="da" label="Danish"> 
  				</video>
 			</div>
 	    <div class="modal-body">
@@ -282,7 +287,8 @@
 
 		// pauser afspilning når modal lukkes
 		$('body').on('hidden.bs.modal', '.modal', function () {
-			$('video').trigger('load'); //ændret til load
+			$('video').trigger('pause'); //ændret fra load
+			$('video').prop('currentTime',0);
 		});
 		
 		// Overlay fade out on load

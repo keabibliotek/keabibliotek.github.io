@@ -1,6 +1,5 @@
 <!doctype html>
-<html>
-<head>
+<html><head>
 <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 <title>Fem korte</title>
 
@@ -123,10 +122,11 @@
 			</button>
 	      </div>
 	  	  	<div class="embed-responsive embed-responsive-16by9">
-				<video controls preload="metadata" poster="grafik/omresearch.png">
+				<video playsinline controls preload="metadata" poster="grafik/omresearch.png">
  					<source src="https://bibliotek.kea.dk/images/femKorte/Research_OmResearch.mp4" type="video/mp4">
-<!-- 					<track src="subs/afsender_en.vtt" kind="subtitles" srclang="en" label="English"> -->
- 				</video>
+					<track src="subs/research/Research_OmResearch_en.vtt" kind="subtitles" srclang="en" label="English">
+					<track src="subs/research/Research_OmResearch.vtt" kind="subtitles" srclang="da" label="Danish"> 				
+				</video>
 			</div>
 	    <div class="modal-body">
 			  <ul>
@@ -152,9 +152,10 @@
 			</button>
 	      </div>
 	  	  	<div class="embed-responsive embed-responsive-16by9">
-				<video controls preload="metadata" poster="grafik/systematik.png">
+				<video playsinline controls preload="metadata" poster="grafik/systematik.png">
  					<source src="https://bibliotek.kea.dk/images/femKorte/Research_Systematik.mp4" type="video/mp4">
-<!-- 					<track src="subs/afsender_en.vtt" kind="subtitles" srclang="en" label="English"> -->
+					<track src="subs/research/Research_Systematik_en.vtt" kind="subtitles" srclang="en" label="English">
+					<track src="subs/research/Research_Systematik.vtt" kind="subtitles" srclang="da" label="Danish"> 
  				</video>
 			</div>
 	    <div class="modal-body">
@@ -182,9 +183,10 @@
 			</button>
 	      </div>
 	  	  	<div class="embed-responsive embed-responsive-16by9">
-				<video controls preload="metadata" poster="grafik/soegeteknik.png">
+				<video playsinline controls preload="metadata" poster="grafik/soegeteknik.png">
  					<source src="https://bibliotek.kea.dk/images/femKorte/Research_SoegeTeknik.mp4" type="video/mp4">
-<!-- 					<track src="subs/afsender_en.vtt" kind="subtitles" srclang="en" label="English"> -->
+					<track src="subs/research/Research_SoegeTeknik_en.vtt" kind="subtitles" srclang="en" label="English">
+					<track src="subs/research/Research_SoegeTeknik.vtt" kind="subtitles" srclang="da" label="Danish"> 
  				</video>
 			</div>
 	    <div class="modal-body">
@@ -211,9 +213,10 @@
 			</button>
 	      </div>
 	  	  	<div class="embed-responsive embed-responsive-16by9">
-				<video controls preload="metadata" poster="grafik/indsamling.png">
+				<video playsinline controls preload="metadata" poster="grafik/indsamling.png">
  					<source src="https://bibliotek.kea.dk/images/femKorte/Research_Indsamling.mp4" type="video/mp4">
-<!-- 					<track src="subs/afsender_en.vtt" kind="subtitles" srclang="en" label="English"> -->
+					<track src="subs/research/Research_Indsamling_en.vtt" kind="subtitles" srclang="en" label="English">
+					<track src="subs/research/Research_Indsamling.vtt" kind="subtitles" srclang="da" label="Danish"> 
  				</video>
 			</div>
 	    <div class="modal-body">
@@ -240,16 +243,17 @@
 			</button>
 	      </div>
 	  	  	<div class="embed-responsive embed-responsive-16by9">
-				<video controls preload="metadata" poster="grafik/nyviden.png">
+				<video playsinline controls preload="metadata" poster="grafik/nyviden.png">
  					<source src="https://bibliotek.kea.dk/images/femKorte/Research_NyViden.mp4" type="video/mp4">
-<!-- 					<track src="subs/afsender_en.vtt" kind="subtitles" srclang="en" label="English"> -->
+					<track src="subs/research/Research_NyViden_en.vtt" kind="subtitles" srclang="en" label="English">
+					<track src="subs/research/Research_NyViden.vtt" kind="subtitles" srclang="da" label="Danish"> 
  				</video>
 			</div>
 	    <div class="modal-body">
 			 <ul>
 				<li>Find de relevante aktører inden for dit fagområde.</li>
 				<li>Hold øje med nye trends og tendenser inden for faget.</li>
-				<li>Gør faglige viden til en integreret del af dit nyheds-flow.</li>
+				<li>Gør faglig viden til en integreret del af dit nyheds-flow.</li>
 			  </ul>
       	</div>
 	    </div>
@@ -290,7 +294,8 @@
 		
 		// pauser afspilning når modal lukkes
 		$('body').on('hidden.bs.modal', '.modal', function () {
-			$('video').trigger('load'); //ændret til load
+			$('video').trigger('pause'); //ændret fra load
+			$('video').prop('currentTime',0);
 		});
 		
 		// Overlay fade out on load
